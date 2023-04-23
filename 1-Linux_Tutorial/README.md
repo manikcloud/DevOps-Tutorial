@@ -230,6 +230,32 @@ To change only the group to `newgroup`:
 ```
 chown :newgroup [file or directory]
 ```
+
+## chmod Examples for Different File Types
+
+1. Set read-only permission for a `.pem` file:
+
+```
+chmod 400 private_key.pem
+```
+This restricts the `.pem` file to be readable only by the owner, ensuring the private key remains secure.
+
+2. Set read, write, and execute permissions for the owner, and read and execute permissions for the group and others on a `script.sh` file:
+
+```
+chmod 755 script.sh
+
+```
+This allows the owner to read, write, and execute the script, while others can only read and execute it.
+
+3. Set read, write, and execute permissions for the owner, group, and others on a `script.sh` file:
+
+```
+chmod 777 script.sh
+```
+
+This allows everyone to read, write, and execute the script, which can be a security risk and is generally not recommended.
+
 ## Additional Notes
 
 - The `chmod` and `chown` commands can be used recursively with the `-R` option to change permissions or ownership for a directory and its contents:
