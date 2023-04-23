@@ -102,3 +102,147 @@ git push origin [new branch name]
 8. Review your changes and click "Create Pull Request."
 
 You have now created a pull request in Git.
+
+
+# Part 3
+
+### Assisted Practice: Push file to GitHub Repository
+
+1. Navigate to your local repository in the terminal.
+2. Create or modify a file in the repository.
+3. Stage the changes using:
+
+```
+git add [file name]
+```
+To stage all changes in the repository, use:
+```
+git add .
+
+```
+
+4. Commit the changes with a meaningful commit message:
+
+```
+git commit -m "Your commit message"
+```
+
+5. Push the changes to the remote repository on GitHub:
+
+```
+git push origin [branch name]
+```
+
+Your changes are now pushed to the GitHub repository.
+
+## Branching in Git
+
+Branching allows you to create a separate line of development within a repository, enabling you to work on features or fixes independently from the main branch. This makes it easier to manage and maintain code, especially in large projects with multiple contributors.
+
+### Assisted Practice: Create a Branch in Git
+
+1. Navigate to your local repository in the terminal.
+2. Create a new branch with a descriptive name:
+
+```
+git checkout -b [new branch name]
+```
+
+3. Verify that you have switched to the new branch:
+
+```
+git branch
+```
+
+You have now created a new branch in Git.
+
+## Switching Branches in Git
+
+Switching branches allows you to move between different lines of development in your repository.
+
+### Assisted Practice: Switching Branches in Git
+
+1. List all branches in your local repository:
+
+```
+git branch
+```
+
+2. Switch to an existing branch:
+
+```
+git checkout [existing branch name]
+```
+
+3. Verify that you have switched to the desired branch:
+
+```
+git branch
+```
+
+You have now successfully switched branches in Git.
+
+## Merging Branches in Git
+
+Merging branches in Git is the process of combining changes from one branch into another. This is commonly done when a feature or fix is completed and ready to be integrated into the main branch.
+
+### Assisted Practice: Merging Branches in Git
+
+1. Ensure that you have committed all changes in the branch you want to merge.
+2. Switch to the target branch:
+
+```
+git checkout [target branch name]
+```
+
+3. Merge the changes from the source branch into the target branch:
+
+```
+git merge [source branch name]
+```
+
+4. Resolve any merge conflicts if they occur, and commit the changes.
+5. Push the updated target branch to the remote repository:
+
+```
+git push origin [target branch name]
+```
+
+You have now successfully merged branches in Git.
+
+This completes the content for your README.md file on version control systems, Git, and GitHub.
+
+
+## Using "git switch" Command
+
+The "git switch" command is an alternative way to switch branches in Git, introduced in Git version 2.23.0. It provides a more straightforward and user-friendly method for switching branches compared to the "git checkout" command.
+
+### Assisted Practice: Switching Branches Using "git switch"
+
+1. List all branches in your local repository:
+
+```
+git branch
+```
+
+2. Switch to an existing branch using the "git switch" command:
+
+```
+git switch [existing branch name]
+```
+
+
+3. Verify that you have switched to the desired branch:
+```
+git branch
+```
+
+You have now successfully switched branches using the "git switch" command.
+
+### Creating a New Branch with "git switch"
+
+You can also create a new branch and switch to it using the "git switch" command in a single step:
+```
+git switch -c [new branch name]
+```
+This command will create a new branch with the specified name and switch
