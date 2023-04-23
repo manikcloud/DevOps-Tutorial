@@ -162,9 +162,6 @@ This section provides an in-depth explanation of the `chmod` and `chown` command
 
 To add execute permission for the user:
 
-### Example
-
-To add execute permission for the user:
 
 ```
 chmod u+x [file or directory]
