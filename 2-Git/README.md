@@ -271,6 +271,6 @@ Enter three time to create the public & private key
 - Step 3 : copy the content of you `id_rsa.pub` key 
 
 ```
-cat ~/.id_ras.pub
+cat ~/.ssh/id_rsa.pub
 ```
 - Step 4 : Paste the content in privious step 6 
