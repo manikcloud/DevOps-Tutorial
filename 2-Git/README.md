@@ -246,3 +246,27 @@ You can also create a new branch and switch to it using the "git switch" command
 git switch -c [new branch name]
 ```
 This command will create a new branch with the specified name and switch
+
+
+# SSH Connectivity to your Simplilearn lab VM 
+
+- Step 1 - Loging to github
+- Step 2: Create a Repo 
+- Step 3 : Click on your user profile and clicl on stetting 
+- step 4: Click on ssh key 
+- step copy and paste your pub key 
+- Step 6: Click OK 
+- Step 7: Clon your repo 
+
+## create ssh key in your lab vm 
+
+- Step 1: Login to lab VM and open terminal 
+- Step 2: runthe following command 
+
+```
+ssh-keygen
+```
+Enter three time to create the public & private key 
+
+- Step 3 : copy the content of you `id_rs.pub` key 
+- Step 4 : Paste the content in privious step 6 
