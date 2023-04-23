@@ -194,6 +194,53 @@ chmod u=rw,g=r,o=r [file or directory]
 | `6`         | Read and Write      |
 | `7`         | Read, Write, Execute|
 
+
+## Octal Permissions and Examples
+
+| Octal Value | Permission          | Description                              | Example                      |
+| ----------- | ------------------- | ---------------------------------------- | ---------------------------- |
+| `0`         | No permission       | No permissions are granted               | `chmod 000 file.txt`         |
+| `1`         | Execute             | Execute permission only                  | `chmod 111 script.sh`        |
+| `2`         | Write               | Write permission only                    | `chmod 222 file.txt`         |
+| `3`         | Write and Execute   | Write and execute permissions            | `chmod 333 script.sh`        |
+| `4`         | Read                | Read permission only                     | `chmod 444 file.txt`         |
+| `5`         | Read and Execute    | Read and execute permissions             | `chmod 555 script.sh`        |
+| `6`         | Read and Write      | Read and write permissions               | `chmod 666 file.txt`         |
+| `7`         | Read, Write, Execute| All permissions (read, write, and execute)| `chmod 777 script.sh`        |
+
+To set permissions using octal values, use the `chmod` command followed by the octal value for user, group, and others:
+```
+chmod [user][group][others] [file or directory]
+```
+Example:
+
+To set read, write, and execute permissions for the user, read and execute permissions for the group, and read permissions for others:
+```
+chmod 754 script.sh
+```
+## Combining Octal Permissions
+
+You can combine octal permissions to create custom permission sets for your files and directories. Each digit in the octal value represents the permissions for the user, group, and others, respectively.
+
+### Examples
+
+1. To set read and write permissions for the user, and read permissions for the group and others:
+
+```
+chmod 644 file.txt
+```
+
+2. To set read, write, and execute permissions for the user, and read permissions for the group and others:
+```
+chmod 744 script.sh
+```
+
+3. To set read and execute permissions for the user, group, and others:
+```
+chmod 555 script.sh
+```
+
+Remember to carefully choose permissions based on the security requirements
 ### Example
 
 To set read, write, and execute permissions for the user, read and write permissions for the group, and read permission for others:
