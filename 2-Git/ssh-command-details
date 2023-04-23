@@ -1,9 +1,7 @@
 ssh-keygen 
 cd ~/.ssh/
 ll
-cat id_rsa
 cat id_rsa.pub 
-llcd -
 cd -
 git clone git@github.com:manikcloud/java-calculator-delete.git
 ll
