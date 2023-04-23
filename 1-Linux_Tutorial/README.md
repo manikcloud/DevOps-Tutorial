@@ -131,7 +131,6 @@ This README file provides a brief introduction to some essential Linux commands 
   ```
 ```
 
-```markdown
 # Linux Basic Commands - chmod and chown
 
 This section provides an in-depth explanation of the `chmod` and `chown` commands, including examples.
