@@ -129,7 +129,7 @@ This README file provides a brief introduction to some essential Linux commands 
   ```
   free -h
   ```
-```
+
 
 # Linux Basic Commands - chmod and chown
 
