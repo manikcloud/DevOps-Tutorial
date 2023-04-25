@@ -1,0 +1,145 @@
+ls
+ls -l 
+clear 
+pwd
+ls
+cd Desktop/
+ls
+ll
+pwd 
+cd /home/varunmanikoutlo/
+pwd 
+ll
+ls -l
+ll
+ls -la
+ls -lar
+ls -lart
+ls -larth
+cd /home/varunmanikoutlo/
+pwd 
+cd Desktop/
+cd ../
+history 
+history | cut -c 8- 
+history 
+history | cut -c 8-
+man cut
+man 
+man ls
+man cut
+ll
+mkdir varun
+ll
+mkdir -p /opt/one/two/tree/four
+mkdir -p ./one/two/tree/four
+ll
+ll one/
+ll one/two/
+ll one/two/tree/
+tree
+apt  install tree
+sudo -i 
+sudo su
+sudo apt  install tree
+htop 
+sudo apt  install elinks
+apt  install elinks
+sudo apt  install elinks
+sudo visudo 
+touch one/one.txt
+tree one/
+tree one/two/index.html
+touch  one/two/index.html
+tree one/two/index.html
+tree one/
+cd one/
+touch a.txt b.txt c.txt d.log
+ll
+vim a.txt 
+ll
+echo "hi this is for file b.txt"
+echo "hi this is for file b.txt" > b.txt 
+cat b.txt 
+cat a.txt 
+history 
+history > history.txt
+ll
+cat history.txt 
+ll
+rm a.txt 
+ll
+rm *.txt
+ll
+tree
+rm two/
+rmdir  two/
+rmdir  two/ -r
+rmdir  two/ -f
+rmdir  two
+rmdir  -f two
+rmdir  -rf two
+rm -rf two
+tree
+ls
+cd ..
+ll
+rm -rf one/
+history 
+history | cut -c 8-
+ehoc "hi" > index.html
+echo "hi" > index.html
+cat index.html 
+echo "hi i am good " >> index.html
+cat index.html 
+echo "hi i am good. How are you ? " >> index.html
+cat index.html 
+ll
+touch varun/a.txt
+uname -a
+date
+cat /etc/issue
+apt install git 
+sudo apt install git 
+cat /etc/os-release 
+cd varun/
+git clone https://github.com/manikcloud/java-calculator-delete.git
+ll
+cd java-calculator-delete/
+ll
+vim README.md 
+git add README.md 
+git commit -am"first upload"
+git push 
+cd ..
+rm -rf java-calculator-delete/
+ll
+git clone git@github.com:manikcloud/java-calculator-delete.git
+ssh-keygen 
+cd ~/.ssh/
+ll
+cat id_rsa
+cat id_rsa.pub 
+llcd -
+cd -
+git clone git@github.com:manikcloud/java-calculator-delete.git
+ll
+cd java-calculator-delete/
+vim README.md 
+git add . 
+git push 
+git config --global user.email varunmanik1@gmail.com
+git config --global user.name varun-sl
+git push 
+git status
+git commit -am"hi"
+gitpush 
+git push 
+cd ..
+git clone git@github.com:manikcloud/DevOps-Tutorial.git
+ll
+cd DevOps-Tutorial/
+ll
+cd 2-Git/
+history 
+history | cut -c 8- > history.txt
