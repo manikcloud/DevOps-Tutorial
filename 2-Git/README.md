@@ -32,12 +32,15 @@ git --version
 
 ```
 
-5. Configure your Git username and email:
+5. Configure your Git username, email & Editor:
 
 ```
 git config --global user.name "Your Name"
 
 git config --global user.email "youremail@example.com"
+
+git config --global core.editor "code --wait"
+
 
 ```
 
