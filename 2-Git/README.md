@@ -435,7 +435,7 @@ Note: Be cautious when using `git rebase` as it can rewrite the commit history. 
 
 | Operation | Description                                                                                                   | Usage                                                                                   |
 |-----------|---------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| Revert    | Creates a new commit that undoes the changes made in a specific commit.                                      | ```bash                                                                                |
+| Revert    | Creates a new commit that undoes the changes made in a specific commit.                                      | ```                                                                                |
 |           |                                                                                                               | git revert <commit_hash>                                                                |
 |           |                                                                                                               | ```                                                                                    |
 | Reset     | Moves the branch pointer to a specified commit. Can be used in soft, mixed (default), or hard mode.          | Soft reset:                                                                             |
