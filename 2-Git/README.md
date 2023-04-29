@@ -478,3 +478,113 @@ Note: Be cautious when using `git rebase` as it can rewrite the commit history. 
 |                 |                                                                                       | git rebase <target_branch>                                                                                |
 |                 |                                                                                       | ```                                                                                                      |
 
+## Components of the .git Folder
+
+The `.git` folder is the heart of a Git repository, and it contains all the metadata and objects required for version control. Here's an overview of its components:
+
+### HEAD
+
+\```bash
+.git/HEAD
+\```
+
+The `HEAD` file is a reference to the currently checked-out commit. It usually points to the tip of the current branch.
+
+### config
+
+\```bash
+.git/config
+\```
+
+The `config` file contains repository-specific configuration settings. These settings override global and system-wide settings.
+
+### description
+
+\```bash
+.git/description
+\```
+
+The `description` file contains a brief text description of the repository. This file is used primarily by the GitWeb program and is not essential for Git functionality.
+
+### hooks
+
+\```bash
+.git/hooks
+\```
+
+The `hooks` directory contains script files that can be executed automatically when certain Git events occur, such as pre-commit, post-commit, or pre-receive. These scripts can be used to enforce coding standards, send notifications, or perform other custom tasks.
+
+### info
+
+\```bash
+.git/info
+\```
+
+The `info` directory contains additional metadata about the repository. The `exclude` file within this directory allows you to specify files or patterns to be ignored by Git, similar to a `.gitignore` file.
+
+### objects
+
+\```bash
+.git/objects
+\```
+
+The `objects` directory stores all the data for your Git repository in a compressed format. It includes commits, trees, and blobs.
+
+### refs
+
+\```bash
+.git/refs
+\```
+
+The `refs` directory contains pointers to commits. It includes references to branches (under `refs/heads`) and tags (under `refs/tags`).
+
+### branches, index, and logs (optional)
+
+\```bash
+.git/branches
+.git/index
+.git/logs
+\```
+
+- The `branches` directory is used for storing legacy branch references and is rarely used in modern Git workflows.
+- The `index` file contains staging area information, which is used to build the next commit.
+- The `logs` directory contains a record of all updates made to the refs.
+
+## Table 
+| Component      | Description                                                                                                                       |
+|----------------|-----------------------------------------------------------------------------------------------------------------------------------|
+| **HEAD**       | A reference to the currently checked-out commit, usually pointing to the tip of the current branch.                               |
+| **config**     | Contains repository-specific configuration settings that override global and system-wide settings.                                |
+| **description**| Contains a brief text description of the repository, primarily used by the GitWeb program.                                         |
+| **hooks**      | A directory with script files that can be executed automatically when certain Git events occur, such as pre-commit or post-commit.|
+| **info**       | Contains additional metadata about the repository. The `exclude` file within allows specifying files or patterns to be ignored.  |
+| **objects**    | Stores all the data for your Git repository in a compressed format, including commits, trees, and blobs.                          |
+| **refs**       | Contains pointers to commits, including references to branches (under `refs/heads`) and tags (under `refs/tags`).                |
+| **branches**   | Used for storing legacy branch references, rarely used in modern Git workflows.                                                  |
+| **index**      | Contains staging area information, used to build the next commit.                                                                |
+| **logs**       | Contains a record of all updates made to the refs.                                                                               |
+
+
+
+# Disclaimer
+<details>
+
+Please note that the entire repository is owned and maintained by [Varun Kumar Manik](https://www.linkedin.com/in/vkmanik/). While every effort has been made to ensure the accuracy and reliability of the information and resources provided in this repository, Varun Kumar Manik takes full responsibility for any errors or inaccuracies that may be present.
+
+Simplilearn is not responsible for the content or materials provided in this repository and disclaims all liability for any issues, misunderstandings, or claims that may arise from the use of the information or materials provided. By using this repository, you acknowledge that Varun Kumar Manik is solely accountable for its content, and you agree to hold Simplilearn harmless from any claims or liabilities that may arise as a result of your use or reliance on the information provided herein.
+
+It is important to understand that this repository contains educational materials for a training course, and users are expected to apply their own judgment and discretion when utilizing the provided resources. Neither Varun Kumar Manik nor Simplilearn can guarantee specific results or outcomes from following the materials in this repository.
+
+</details>
+
+## Connect & Follow
+
+For more info, please connect and follow me:
+
+- Github: [https://github.com/manikcloud](https://github.com/manikcloud)
+- LinkedIn: [https://www.linkedin.com/in/vkmanik/](https://www.linkedin.com/in/vkmanik/)
+- Email: [varunmanik1@gmail.com](mailto:varunmanik1@gmail.com)
+- Facebook: [https://www.facebook.com/cloudvirtualization/](https://www.facebook.com/cloudvirtualization/)
+- YouTube: [https://bit.ly/32fknRN](https://bit.ly/32fknRN)
+- Twitter: [https://twitter.com/varunkmanik](https://twitter.com/varunkmanik)
+
