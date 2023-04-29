@@ -433,10 +433,26 @@ Git rebase is used to apply a series of commits from one branch onto another, cr
 
 Note: Be cautious when using `git rebase` as it can rewrite the commit history. It's recommended to use it only on local branches that haven't been pushed to a remote repository.
 
-| Operation | Description                                                                                                   | Usage                                                                                   |
-|-----------|---------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| Revert    | Creates a new commit that undoes the changes made in a specific commit.                                      | ```                                                                                |
-|           |                                                                                                               | git revert <commit_hash>                                                                |
-|           |                                                                                                               | ```                                                                                    |
-| Reset     | Moves the branch pointer to a specified commit. Can be used in soft, mixed (default), or hard mode.          | Soft reset:                                                                             |
-|           |                                                                
+
+| Operation       | Description                                                                           | Usage                                                                                                     |
+|-----------------|---------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
+| **Git Revert**  | Creates a new commit that undoes the changes made in a specific commit.              | ```                                                                                                  |
+|                 |                                                                                       | git revert <commit_hash>                                                                                  |
+|                 |                                                                                       | ```                                                                                                      |
+| **Git Reset**   | Moves the branch pointer to a specified commit. Soft, mixed (default), or hard mode. | Soft reset:                                                                                               |
+|                 |                                                                                       | ```                                                                                                  |
+|                 |                                                                                       | git reset --soft <commit_hash>                                                                            |
+|                 |                                                                                       | ```                                                                                                      |
+|                 |                                                                                       | Mixed reset (default):                                                                                    |
+|                 |                                                                                       | ```                                                                                                  |
+|                 |                                                                                       | git reset <commit_hash>                                                                                   |
+|                 |                                                                                       | ```                                                                                                      |
+|                 |                                                                                       | Hard reset:                                                                                               |
+|                 |                                                                                       | ```                                                                                                  |
+|                 |                                                                                       | git reset --hard <commit_hash>                                                                            |
+|                 |                                                                                       | ```                                                                                                      |
+| **Git Rebase**  | Applies a series of commits from one branch onto another, creating a linear history. | ```                                                                                                  |
+|                 |                                                                                       | git checkout <source_branch>                                                                              |
+|                 |                                                                                       | git rebase <target_branch>                                                                                |
+|                 |                                                                                       | ```                                                                                                      |
+
