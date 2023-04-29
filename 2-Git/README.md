@@ -255,7 +255,7 @@ This command will create a new branch with the specified name and switch
 | Operation        | Description                                                                 | Usage                                                                                       |
 |------------------|-----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
 | **Git Switch**   | Switches to a different branch or commit, creating a new branch if needed. 
-git switch <branch_name>                                                                    |
+|                  |                                                                             | git switch <branch_name>                                                                    |
 |                  |                                                                             | git switch -c <new_branch_name>                                                             |
 |                  |                                                                             | git switch --detach <commit_hash>                                                           |
 |                  |                                                                             |                                                                                        |
