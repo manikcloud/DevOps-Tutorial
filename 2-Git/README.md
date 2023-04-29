@@ -306,11 +306,6 @@ Please type 'yes', 'no' or the fingerprint: y
 Please type 'yes', 'no' or the fingerprint: y
 Please type 'yes', 'no' or the fingerprint: n
 Please type 'yes', 'no' or the fingerprint: y
-Please type 'yes', 'no' or the fingerprint: y
-Please type 'yes', 'no' or the fingerprint: y
-Please type 'yes', 'no' or the fingerprint: y
-Please type 'yes', 'no' or the fingerprint: y
-Please type 'yes', 'no' or the fingerprint: yes
 Warning: Permanently added 'github.com,140.82.114.4' (ECDSA) to the list of known hosts.
 git@github.com: Permission denied (publickey).
 fatal: Could not read from remote repository.
@@ -318,7 +313,16 @@ fatal: Could not read from remote repository.
 Please make sure you have the correct access rights
 and the repository exists.
 ```
+## Solution 
+1. Open the `known_hosts` file using a text editor like `nano` or `vim`:
 
+   ```
+   nano ~/.ssh/known_hosts
+   ```
+
+2. Locate the entry for the host you want to delete. The entry will start with the hostname (e.g., `github.com`) or the IP address, followed by the public key and some other information. Delete the entire line containing the entry, save the changes, and close the text editor.
+
+-----------------------------------------------------------------------------------------------------------
 
 
 # Git Branch Guide
