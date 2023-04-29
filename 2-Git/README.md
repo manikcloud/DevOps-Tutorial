@@ -32,12 +32,15 @@ git --version
 
 ```
 
-5. Configure your Git username and email:
+5. Configure your Git username, email & Editor:
 
 ```
 git config --global user.name "Your Name"
 
 git config --global user.email "youremail@example.com"
+
+git config --global core.editor "code --wait"
+
 
 ```
 
@@ -247,6 +250,21 @@ git switch -c [new branch name]
 ```
 This command will create a new branch with the specified name and switch
 
+# Git Switch vs git Checkout
+
+| Operation        | Description                                                                 | Usage                                                                                       |
+|------------------|-----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
+| **Git Switch**   | Switches to a different branch or commit, creating a new branch if needed. 
+|                  |                                                                             | git switch <branch_name>                                                                    |
+|                  |                                                                             | git switch -c <new_branch_name>                                                             |
+|                  |                                                                             | git switch --detach <commit_hash>                                                           |
+|                  |                                                                             |                                                                                        |
+| **Git Checkout** | Switches to a different branch or commit, creating a new branch if needed. | ```                                                                                    |
+|                  |                                                                             | git checkout <branch_name>                                                                  |
+|                  |                                                                             | git checkout -b <new_branch_name>                                                           |
+|                  |                                                                             | git checkout <commit_hash>                                                                  |
+|                  |                                                                             | ```                                                                                        |
+
 
 # SSH Connectivity to your Simplilearn lab VM 
 
@@ -274,3 +292,299 @@ Enter three time to create the public & private key
 cat ~/.ssh/id_rsa.pub
 ```
 - Step 4 : Paste the content in privious step 6 
+
+
+# Common error while stting the above steps 
+
+```
+git clone git@github.com:sindhugowda1991/java.calculatore-delete.git
+Cloning into 'java.calculatore-delete'...
+The authenticity of host 'github.com (140.82.114.4)' can't be established.
+ECDSA key fingerprint is SHA256:p2QAMXNIC1TJYWeIOttrVc98/R1BUFWu3/LiyKgUfQM.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? y
+Please type 'yes', 'no' or the fingerprint: y
+Please type 'yes', 'no' or the fingerprint: y
+Please type 'yes', 'no' or the fingerprint: n
+Please type 'yes', 'no' or the fingerprint: y
+Warning: Permanently added 'github.com,140.82.114.4' (ECDSA) to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+```
+## Solution 
+1. Open the `known_hosts` file using a text editor like `nano` or `vim`:
+
+   ```
+   nano ~/.ssh/known_hosts
+   ```
+
+2. Locate the entry for the host you want to delete. The entry will start with the hostname (e.g., `github.com`) or the IP address, followed by the public key and some other information. Delete the entire line containing the entry, save the changes, and close the text editor.
+
+-----------------------------------------------------------------------------------------------------------
+
+
+# Git Branch Guide
+
+This is a step-by-step guide to help you understand and work with Git branches. Branches are a fundamental feature of Git that allows developers to work on multiple tasks simultaneously without interfering with each other.
+
+## Table of Contents
+
+1. [Purpose of Git Branches](#purpose-of-git-branches)
+2. [Creating a Branch](#creating-a-branch)
+3. [Switching Between Branches](#switching-between-branches)
+4. [Merging Branches](#merging-branches)
+5. [Deleting a Branch](#deleting-a-branch)
+
+## Purpose of Git Branches
+
+Git branches allow you to separate different features or bug fixes into their own isolated environments. This makes it easier to manage, test, and collaborate on code without causing conflicts.
+
+## Creating a Branch
+
+To create a new branch, use the following command:
+
+```
+git checkout -b <branch_name>
+```
+
+This will create a new branch and switch to it.
+
+## Switching Between Branches
+
+To switch between branches, use the following command:
+
+```
+git checkout <branch_name>
+```
+
+This will switch to the specified branch.
+
+## Merging Branches
+
+To merge one branch into another, first switch to the branch you want to merge into:
+
+```
+git checkout <target_branch>
+```
+
+Then, use the following command to merge the other branch:
+
+```
+git merge <source_branch>
+```
+
+This will merge the changes from the source branch into the target branch.
+
+## Deleting a Branch
+
+To delete a branch, use the following command:
+
+```
+git branch -d <branch_name>
+```
+
+This will delete the specified branch.
+
+## Git Merge, Reset, and Rebase
+
+These operations are used to manipulate the commit history and combine changes from different branches.
+
+### Git Merge
+
+Git merge combines the changes from one branch into another. To perform a merge, follow these steps:
+
+1. Switch to the target branch:
+
+   ```
+   git checkout <target_branch>
+   ```
+
+2. Merge the source branch into the target branch:
+
+   ```
+   git merge <source_branch>
+   ```
+
+### Git Reset
+
+Git reset is used to undo commits or move the branch pointer to a different commit. There are three modes: soft, mixed (default), and hard.
+
+1. Soft reset:
+
+   ```
+   git reset --soft <commit_hash>
+   ```
+
+   This will move the branch pointer to the specified commit, but keep the changes in the staging area.
+
+2. Mixed reset (default):
+
+   ```
+   git reset <commit_hash>
+   ```
+
+   This will move the branch pointer to the specified commit and unstage the changes.
+
+3. Hard reset:
+
+   ```
+   git reset --hard <commit_hash>
+   ```
+
+   This will move the branch pointer to the specified commit and discard all changes.
+
+### Git Rebase
+
+Git rebase is used to apply a series of commits from one branch onto another, creating a linear history. To perform a rebase, follow these steps:
+
+1. Switch to the branch that has the commits you want to apply:
+
+   ```
+   git checkout <source_branch>
+   ```
+
+2. Rebase the source branch onto the target branch:
+
+   ```
+   git rebase <target_branch>
+   ```
+
+   This will apply the commits from the source branch on top of the target branch.
+
+Note: Be cautious when using `git rebase` as it can rewrite the commit history. It's recommended to use it only on local branches that haven't been pushed to a remote repository.
+
+
+| Operation       | Description                                                                           | Usage                                                                                                     |
+|-----------------|---------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
+| **Git Revert**  | Creates a new commit that undoes the changes made in a specific commit.              | ```                                                                                                  |
+|                 |                                                                                       | git revert <commit_hash>                                                                                  |
+|                 |                                                                                       | ```                                                                                                      |
+| **Git Reset**   | Moves the branch pointer to a specified commit. Soft, mixed (default), or hard mode. | Soft reset:                                                                                               |
+|                 |                                                                                       | ```                                                                                                  |
+|                 |                                                                                       | git reset --soft <commit_hash>                                                                            |
+|                 |                                                                                       | ```                                                                                                      |
+|                 |                                                                                       | Mixed reset (default):                                                                                    |
+|                 |                                                                                       | ```                                                                                                  |
+|                 |                                                                                       | git reset <commit_hash>                                                                                   |
+|                 |                                                                                       | ```                                                                                                      |
+|                 |                                                                                       | Hard reset:                                                                                               |
+|                 |                                                                                       | ```                                                                                                  |
+|                 |                                                                                       | git reset --hard <commit_hash>                                                                            |
+|                 |                                                                                       | ```                                                                                                      |
+| **Git Rebase**  | Applies a series of commits from one branch onto another, creating a linear history. | ```                                                                                                  |
+|                 |                                                                                       | git checkout <source_branch>                                                                              |
+|                 |                                                                                       | git rebase <target_branch>                                                                                |
+|                 |                                                                                       | ```                                                                                                      |
+
+## Components of the .git Folder
+
+The `.git` folder is the heart of a Git repository, and it contains all the metadata and objects required for version control. Here's an overview of its components:
+
+### HEAD
+
+```
+.git/HEAD
+```
+
+The `HEAD` file is a reference to the currently checked-out commit. It usually points to the tip of the current branch.
+
+### config
+
+```
+.git/config
+```
+
+The `config` file contains repository-specific configuration settings. These settings override global and system-wide settings.
+
+### description
+
+```
+.git/description
+```
+
+The `description` file contains a brief text description of the repository. This file is used primarily by the GitWeb program and is not essential for Git functionality.
+
+### hooks
+
+```
+.git/hooks
+```
+
+The `hooks` directory contains script files that can be executed automatically when certain Git events occur, such as pre-commit, post-commit, or pre-receive. These scripts can be used to enforce coding standards, send notifications, or perform other custom tasks.
+
+### info
+
+```
+.git/info
+```
+
+The `info` directory contains additional metadata about the repository. The `exclude` file within this directory allows you to specify files or patterns to be ignored by Git, similar to a `.gitignore` file.
+
+### objects
+
+```
+.git/objects
+```
+
+The `objects` directory stores all the data for your Git repository in a compressed format. It includes commits, trees, and blobs.
+
+### refs
+
+```
+.git/refs
+```
+
+The `refs` directory contains pointers to commits. It includes references to branches (under `refs/heads`) and tags (under `refs/tags`).
+
+### branches, index, and logs (optional)
+
+```
+.git/branches
+.git/index
+.git/logs
+```
+
+- The `branches` directory is used for storing legacy branch references and is rarely used in modern Git workflows.
+- The `index` file contains staging area information, which is used to build the next commit.
+- The `logs` directory contains a record of all updates made to the refs.
+
+## Table 
+| Component      | Description                                                                                                                       |
+|----------------|-----------------------------------------------------------------------------------------------------------------------------------|
+| **HEAD**       | A reference to the currently checked-out commit, usually pointing to the tip of the current branch.                               |
+| **config**     | Contains repository-specific configuration settings that override global and system-wide settings.                                |
+| **description**| Contains a brief text description of the repository, primarily used by the GitWeb program.                                         |
+| **hooks**      | A directory with script files that can be executed automatically when certain Git events occur, such as pre-commit or post-commit.|
+| **info**       | Contains additional metadata about the repository. The `exclude` file within allows specifying files or patterns to be ignored.  |
+| **objects**    | Stores all the data for your Git repository in a compressed format, including commits, trees, and blobs.                          |
+| **refs**       | Contains pointers to commits, including references to branches (under `refs/heads`) and tags (under `refs/tags`).                |
+| **branches**   | Used for storing legacy branch references, rarely used in modern Git workflows.                                                  |
+| **index**      | Contains staging area information, used to build the next commit.                                                                |
+| **logs**       | Contains a record of all updates made to the refs.                                                                               |
+
+
+
+# Disclaimer
+<details>
+
+Please note that the entire repository is owned and maintained by [Varun Kumar Manik](https://www.linkedin.com/in/vkmanik/). While every effort has been made to ensure the accuracy and reliability of the information and resources provided in this repository, Varun Kumar Manik takes full responsibility for any errors or inaccuracies that may be present.
+
+Simplilearn is not responsible for the content or materials provided in this repository and disclaims all liability for any issues, misunderstandings, or claims that may arise from the use of the information or materials provided. By using this repository, you acknowledge that Varun Kumar Manik is solely accountable for its content, and you agree to hold Simplilearn harmless from any claims or liabilities that may arise as a result of your use or reliance on the information provided herein.
+
+It is important to understand that this repository contains educational materials for a training course, and users are expected to apply their own judgment and discretion when utilizing the provided resources. Neither Varun Kumar Manik nor Simplilearn can guarantee specific results or outcomes from following the materials in this repository.
+
+</details>
+
+## Connect & Follow
+
+For more info, please connect and follow me:
+
+- Github: [https://github.com/manikcloud](https://github.com/manikcloud)
+- LinkedIn: [https://www.linkedin.com/in/vkmanik/](https://www.linkedin.com/in/vkmanik/)
+- Email: [varunmanik1@gmail.com](mailto:varunmanik1@gmail.com)
+- Facebook: [https://www.facebook.com/cloudvirtualization/](https://www.facebook.com/cloudvirtualization/)
+- YouTube: [https://bit.ly/32fknRN](https://bit.ly/32fknRN)
+- Twitter: [https://twitter.com/varunkmanik](https://twitter.com/varunkmanik)
+
