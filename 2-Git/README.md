@@ -300,3 +300,68 @@ fatal: Could not read from remote repository.
 Please make sure you have the correct access rights
 and the repository exists.
 ```
+
+
+
+# Git Branch Guide
+
+This is a step-by-step guide to help you understand and work with Git branches. Branches are a fundamental feature of Git that allows developers to work on multiple tasks simultaneously without interfering with each other.
+
+## Table of Contents
+
+1. [Purpose of Git Branches](#purpose-of-git-branches)
+2. [Creating a Branch](#creating-a-branch)
+3. [Switching Between Branches](#switching-between-branches)
+4. [Merging Branches](#merging-branches)
+5. [Deleting a Branch](#deleting-a-branch)
+
+## Purpose of Git Branches
+
+Git branches allow you to separate different features or bug fixes into their own isolated environments. This makes it easier to manage, test, and collaborate on code without causing conflicts.
+
+## Creating a Branch
+
+To create a new branch, use the following command:
+
+```
+git checkout -b <branch_name>
+```
+
+This will create a new branch and switch to it.
+
+## Switching Between Branches
+
+To switch between branches, use the following command:
+
+```
+git checkout <branch_name>
+```
+
+This will switch to the specified branch.
+
+## Merging Branches
+
+To merge one branch into another, first switch to the branch you want to merge into:
+
+```
+git checkout <target_branch>
+```
+
+Then, use the following command to merge the other branch:
+
+```
+git merge <source_branch>
+```
+
+This will merge the changes from the source branch into the target branch.
+
+## Deleting a Branch
+
+To delete a branch, use the following command:
+
+```
+git branch -d <branch_name>
+```
+
+This will delete the specified branch.
+
