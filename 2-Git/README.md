@@ -365,3 +365,71 @@ git branch -d <branch_name>
 
 This will delete the specified branch.
 
+## Git Merge, Reset, and Rebase
+
+These operations are used to manipulate the commit history and combine changes from different branches.
+
+### Git Merge
+
+Git merge combines the changes from one branch into another. To perform a merge, follow these steps:
+
+1. Switch to the target branch:
+
+   \```bash
+   git checkout <target_branch>
+   \```
+
+2. Merge the source branch into the target branch:
+
+   \```bash
+   git merge <source_branch>
+   \```
+
+### Git Reset
+
+Git reset is used to undo commits or move the branch pointer to a different commit. There are three modes: soft, mixed (default), and hard.
+
+1. Soft reset:
+
+   \```bash
+   git reset --soft <commit_hash>
+   \```
+
+   This will move the branch pointer to the specified commit, but keep the changes in the staging area.
+
+2. Mixed reset (default):
+
+   \```bash
+   git reset <commit_hash>
+   \```
+
+   This will move the branch pointer to the specified commit and unstage the changes.
+
+3. Hard reset:
+
+   \```bash
+   git reset --hard <commit_hash>
+   \```
+
+   This will move the branch pointer to the specified commit and discard all changes.
+
+### Git Rebase
+
+Git rebase is used to apply a series of commits from one branch onto another, creating a linear history. To perform a rebase, follow these steps:
+
+1. Switch to the branch that has the commits you want to apply:
+
+   \```bash
+   git checkout <source_branch>
+   \```
+
+2. Rebase the source branch onto the target branch:
+
+   \```bash
+   git rebase <target_branch>
+   \```
+
+   This will apply the commits from the source branch on top of the target branch.
+
+Note: Be cautious when using `git rebase` as it can rewrite the commit history. It's recommended to use it only on local branches that haven't been pushed to a remote repository.
+
