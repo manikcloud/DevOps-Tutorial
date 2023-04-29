@@ -247,6 +247,21 @@ git switch -c [new branch name]
 ```
 This command will create a new branch with the specified name and switch
 
+# Git Switch vs git Checkout
+
+| Operation        | Description                                                                 | Usage                                                                                       |
+|------------------|-----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
+| **Git Switch**   | Switches to a different branch or commit, creating a new branch if needed. | ```                                                                                    |
+|                  |                                                                             | git switch <branch_name>                                                                    |
+|                  |                                                                             | git switch -c <new_branch_name>                                                             |
+|                  |                                                                             | git switch --detach <commit_hash>                                                           |
+|                  |                                                                             | ```                                                                                        |
+| **Git Checkout** | Switches to a different branch or commit, creating a new branch if needed. | ```                                                                                    |
+|                  |                                                                             | git checkout <branch_name>                                                                  |
+|                  |                                                                             | git checkout -b <new_branch_name>                                                           |
+|                  |                                                                             | git checkout <commit_hash>                                                                  |
+|                  |                                                                             | ```                                                                                        |
+
 
 # SSH Connectivity to your Simplilearn lab VM 
 
