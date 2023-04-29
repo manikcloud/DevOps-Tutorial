@@ -484,67 +484,67 @@ The `.git` folder is the heart of a Git repository, and it contains all the meta
 
 ### HEAD
 
-\```bash
+```
 .git/HEAD
-\```
+```
 
 The `HEAD` file is a reference to the currently checked-out commit. It usually points to the tip of the current branch.
 
 ### config
 
-\```bash
+```
 .git/config
-\```
+```
 
 The `config` file contains repository-specific configuration settings. These settings override global and system-wide settings.
 
 ### description
 
-\```bash
+```
 .git/description
-\```
+```
 
 The `description` file contains a brief text description of the repository. This file is used primarily by the GitWeb program and is not essential for Git functionality.
 
 ### hooks
 
-\```bash
+```
 .git/hooks
-\```
+```
 
 The `hooks` directory contains script files that can be executed automatically when certain Git events occur, such as pre-commit, post-commit, or pre-receive. These scripts can be used to enforce coding standards, send notifications, or perform other custom tasks.
 
 ### info
 
-\```bash
+```
 .git/info
-\```
+```
 
 The `info` directory contains additional metadata about the repository. The `exclude` file within this directory allows you to specify files or patterns to be ignored by Git, similar to a `.gitignore` file.
 
 ### objects
 
-\```bash
+```
 .git/objects
-\```
+```
 
 The `objects` directory stores all the data for your Git repository in a compressed format. It includes commits, trees, and blobs.
 
 ### refs
 
-\```bash
+```
 .git/refs
-\```
+```
 
 The `refs` directory contains pointers to commits. It includes references to branches (under `refs/heads`) and tags (under `refs/tags`).
 
 ### branches, index, and logs (optional)
 
-\```bash
+```
 .git/branches
 .git/index
 .git/logs
-\```
+```
 
 - The `branches` directory is used for storing legacy branch references and is rarely used in modern Git workflows.
 - The `index` file contains staging area information, which is used to build the next commit.
