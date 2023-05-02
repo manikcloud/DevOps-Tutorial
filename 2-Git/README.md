@@ -1,4 +1,14 @@
-# Version Control System
+# Version Control SystemTable of Contents
+
+Table of Contents
+
+1. [Purpose of Git Branches](#purpose-of-git-branches)
+2. [Creating a Branch](#creating-a-branch)
+3. [Switching Between Branches](#switching-between-branches)
+4. [Merging Branches](#merging-branches)
+5. [Deleting a Branch](#deleting-a-branch)
+
+
 
 ## Introduction
 
