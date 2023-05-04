@@ -1,0 +1,4 @@
+git config --global user.name "Kay-lab"
+git config --global user.email "uchudthong@outlook.com"
+
+git congif --global core.editor "code"
