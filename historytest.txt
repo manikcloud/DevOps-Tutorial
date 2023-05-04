@@ -1,0 +1,346 @@
+    1  history | cut -c 8
+    2  history | cut -c 8-
+    3  man
+    4  help
+    5  man man
+    6  mkdir varun
+    7  mkdir kay
+    8  ls
+    9  ls -l
+   10  mkdir -p /one/two/three/four
+   11  mkdir -p. /one/two/three/four
+   12  mkdir -p ./one/two/three/four
+   13  ls
+   14  ls -l
+   15  apt install tree
+   16  sudo su
+   17  sudo -i
+   18  ls
+   19  touch one/one.txt
+   20  ls
+   21  cd one
+   22  ls
+   23  cd ..
+   24  tree one
+   25  cd one
+   26  touch a.txt b.txt c.txt d.log
+   27  ls
+   28  ls -ls
+   29  vim a.txt
+   30  echo "hi" > b.txt
+   31  ls
+   32  cd one
+   33  echo "hi"
+   34  echo "hi" > b.txt
+   35  ls
+   36  cat b.txt
+   37  history > history.txt
+   38  ls
+   39  ls -l
+   40  cat history
+   41  cat history.txt
+   42  ls
+   43  cd ..
+   44  ls
+   45  rm b.txt
+   46  ls
+   47  cd one
+   48  ls
+   49  rm *.txt
+   50  ls
+   51  tree
+   52  rm two/
+   53  ls
+   54  tree
+   55  rm -rf two
+   56  ls
+   57  rm -rf one
+   58  ls
+   59  cd ..
+   60  ls
+   61  rm -rf one
+   62  ls
+   63  rm 
+   64  redir varun
+   65  sudo install redir
+   66  sudo apt install redir
+   67  ls 
+   68  redir varun
+   69  ls
+   70  rm -rf varun
+   71  ls
+   72  cd kay
+   73  echo "hi" index.html
+   74  echo "hi" > index.html
+   75  ls
+   76  ls
+   77  ls -a
+   78  ls -l
+   79  pwd
+   80  ls
+   81  cd Desktop/
+   82  ls
+   83  cd /home/kayparellokaypa
+   84  ls
+   85  ll
+   86  ls -la
+   87  ls -lar
+   88  ls -larth
+   89  pwd
+   90  ls
+   91  cd Desktop
+   92  cd ..
+   93  ls
+   94  sudo apt install git
+   95  cat /etc/os-release
+   96  git clone https://github.com/Umapon/java-calculater-delete.git
+   97  ls
+   98  git add ReadMe.md
+   99  git add README.md
+  100  ssh-keygen
+  101  ls
+  102  cat gitkey
+  103  cat gitkey.pub
+  104  git clone https://github.com/Umapon/java-calculater-delete.git
+  105  ls
+  106  ll
+  107  cd java-calculater-delete/
+  108  ls
+  109  nano README.md 
+  110  git add .
+  111  git status
+  112  git commit -am"first upload"
+  113  git config --global user.email kayparellokayparello@gmail.com
+  114  git config --global user.name Umapon
+  115  git push
+  116  cd -
+  117  git clone https://github.com/Umapon/java-calculater-delete.git
+  118  ls
+  119  cd -
+  120  ls
+  121  git status
+  122  ls
+  123  nano README.md 
+  124  git status
+  125  git add .
+  126  git push
+  127  git status
+  128  git commit -am "hi"
+  129  git push
+  130  ssh -T git@github.com
+  131  cd -
+  132  git clone git@github.com:Umapon/java-calculater-delete.git
+  133  ls
+  134  ssh -T git@github.com:Umapon/java-calculater-delete.git
+  135  ssh -T git@github.com
+  136  ls
+  137  cat gitkey.pub
+  138  ssh -T git@github.com
+  139  ll
+  140  ls
+  141  cd java-calculater-delete/
+  142  git add .
+  143  git status
+  144  git push
+  145  cd ..
+  146  ls
+  147  rm -d java-calculater-delete/
+  148  rm -f java-calculater-delete/
+  149  cd java-calculater-delete/
+  150  ls
+  151  rm README.md 
+  152  cd -
+  153  rm -r java-calculater-delete/
+  154  ls
+  155  rm -r java-calculater-delete/
+  156  ls
+  157  cd -
+  158  git clone git@github.com:Umapon/java-calculater-delete.git
+  159  sudo su
+  160  ls
+  161  rm java-calculater-delete/
+  162  rm -r java-calculater-delete/
+  163  ls
+  164  ll
+  165  ls
+  166  ssh -T git@github.com
+  167  cd -
+  168  git clone git@github.com:Umapon/java-calculater-delete.git
+  169  ls
+  170  cd java-calculater-delete/
+  171  ls
+  172  ll
+  173  -help rm
+  174  -help
+  175  cd -
+  176  rm -rf java-calculater-delete/
+  177  ls
+  178  git clone git@github.com:Umapon/java-calculater-delete.git
+  179  ls
+  180  rm gitkey
+  181  rm gitkey.pub 
+  182  ls
+  183  ssh keygen
+  184  ssh-keygen
+  185  cat -/.ssh/Id_rsa.pub
+  186  ls
+  187  ssh-keygen
+  188  ls
+  189  cat gitkey
+  190  ls
+  191  cat gitkey.pub
+  192  git clone git@github.com:Umapon/java-calculater-delete.git
+  193  ssh-keygen
+  194  ls
+  195  cat ~/.ssh/Id_rsa.pub
+  196  ls
+  197  ll
+  198  cd ssh
+  199  cat /ssh
+  200  cat ~/.ssh//
+  201  cat /.ssh/
+  202  cat .ssh/Id_rsa.pub
+  203  cat ~/.ssh/known hosts
+  204  ls
+  205  git clone git@github.com:Umapon/java-calculater-delete.git
+  206  cat ~/.ssh/known hosts
+  207  cat ~/.ssh/
+  208  ls -l
+  209  ls
+  210  git clone https://github.com/Umapon/java-calculater-delete.git
+  211  ls
+  212  cd ssh
+  213  cd ..
+  214  ls
+  215  cd kayparellokaypa/
+  216  ls
+  217  ls -l
+  218  ls -a
+  219  cd /.ssh
+  220  cd /.ssh/known hosts
+  221  cat /.ssh/known hosts
+  222  cat -/.ssh/known hosts
+  223  cat ~/.ssh/known hosts
+  224  cat ~/.ssh/known_hosts
+  225  nano ~/.ssh/known_hosts
+  226  cat ~/.ssh/known_hosts
+  227  ls
+  228  cd kay
+  229  ls
+  230  ssh-keygen
+  231  ls
+  232  cat gkey.pub 
+  233  git clone git@github.com:Umapon/java-calculater-delete.git
+  234  ls
+  235  rm -rf java-calculater-delete/
+  236  ls
+  237  git clone git@github.com:Umapon/java-calculater-delete.git
+  238  cat ~/.ssh/known_hosts
+  239  ls
+  240  cat gkey.pub
+  241  cat ~/.ssh/known_hosts
+  242  git clone git@github.com:Umapon/java-calculater-delete.git
+  243  ls
+  244  git --version
+  245  git config --global user.name "Umapon"
+  246  git config --global user.email uchudthong@outlook.com
+  247  git config --global user.name"Umapon
+  248  exit
+  249  git config --global user.name Umapon
+  250  ls
+  251  git -version
+  252  git --version
+  253  history
+  254  ls
+  255  ssh-keygen
+  256  cd ~/.ssh/
+  257  ll
+  258  cat id_rsa.pub
+  259  nano id_rsa.pub
+  260  ls
+  261  cat id_rsa
+  262  cd .
+  263  cd ..
+  264  cd -
+  265  cd ..
+  266  ls
+  267  cd kay
+  268  ls
+  269  cd ..
+  270  rm -rf kay
+  271  ls
+  272  rm -rf gitkey
+  273  rm -rf gitkey.pub
+  274  ls
+  275  cd ~/ssh/
+  276  cd ~/.ssh/
+  277  ls
+  278  rm -rf id_rsa
+  279  rm -rf id_rsa.pub 
+  280  ls
+  281  cd -
+  282  mkdir kay
+  283  ls
+  284  cd kay
+  285  ssh-keygen
+  286  cd ~/.ssh/
+  287  ls
+  288  cat id_rsa.pub
+  289  gitclone git@github.com:manikcloud/DevOps-Tutorial.git
+  290  git clone git@github.com:manikcloud/DevOps-Tutorial.git
+  291  ls
+  292  rm -rf DevOps-Tutorial/
+  293  ls
+  294  cd ..
+  295  ls
+  296  cd kay
+  297  git clone git@github.com:manikcloud/DevOps-Tutorial.git
+  298  ls
+  299  cd DevOps-Tutorial/
+  300  ls
+  301  ll
+  302  cd 2-Git/
+  303  ls
+  304  ll
+  305  git status
+  306  history | cut -c 8 > history8.txt
+  307  ls
+  308  git status
+  309  git add history8.txt 
+  310  git status
+  311  ll
+  312  cd kay
+  313  ll
+  314  cd DevOps-Tutorial/
+  315  ls
+  316  ll
+  317  git status
+  318* 
+  319  git status
+  320  git push
+  321  cd ..
+  322  git clone git@github.com:Umapon/java-calculater-delete.git
+  323  ll
+  324  cd java-calculater-delete/
+  325  ll
+  326  history > history.txt
+  327  ls
+  328  ll
+  329  git status
+  330  git add 
+  331  git add .
+  332  git status
+  333  git commit -am "Upload history"
+  334  git commit -am" Upload history"
+  335  git push
+  336  cd ..
+  337  ls
+  338  rm -rf DevOps-Tutorial/
+  339  ls
+  340  git clone git@github.com:Umapon/DevOps-Tutorial.git
+  341  ls
+  342  ll
+  343  cd DevOps-Tutorial/
+  344  ls
+  345  ll
+  346  history > historytest.txt
