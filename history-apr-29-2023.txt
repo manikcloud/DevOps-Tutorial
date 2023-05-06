@@ -1,0 +1,19 @@
+git clone git@github.com:manikcloud/DevOps-Tutorial.git
+ll
+git branch 
+git branch -a
+git checkout -b dev1
+git branch -a
+git checkout -b dev-4567
+git branch -a
+git switch -c uat-123
+git branch -a
+git switch dev
+git switch dev1
+git switch -
+git branch -a
+git switch main
+git switch dev-4567 
+history 
+history | cut  -c 8-
+history | cut  -c 8- > history-apr-29-2023.txt
