@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash 
 
 # Set the desired Terraform version
 TERRAFORM_VERSION="1.4.5"

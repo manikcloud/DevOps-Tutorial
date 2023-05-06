@@ -7,7 +7,7 @@ Steps to be performed:
 ## Install Terraform from SH Script
 
 ```
-sudo cchmod 755 tf-installation.sh
+sudo chmod 755 tf-installation.sh
 sudo sh tf-installation.sh 
 
 ```
