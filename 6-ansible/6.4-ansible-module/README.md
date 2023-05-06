@@ -13,8 +13,8 @@ This document provides the steps to execute Ansible modules on a local server.
 1.1 Run the below commands in the given sequence to execute different Ansible modules.
 
 ```
-ansible -m setup webservers
-ansible webservers -m shell -a 'hostname'
+ansible -m setup all
+ansible all -m shell -a 'hostname'
 ansible webservers -m apt -a 'name=git state=present' --become
 ansible webservers -m file -a 'dest=/root/sample.txt state=touch mode=600 owner=root group=root' --become
 ```

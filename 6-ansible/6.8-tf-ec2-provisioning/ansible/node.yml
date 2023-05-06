@@ -1,0 +1,19 @@
+---
+- hosts: all
+  become: true
+  tasks:
+    - name: add apt key for nodesource
+      become: true
+      apt_key:
+        url: https://deb.nodesource.com/gpgkey/nodesource.gpg.key
+
+    - name: add repo for nodesource
+      become: true
+      apt_repository:
+        repo: 'deb https://deb.nodesource.com/node_0.10 {{ ansible_distribution_release }} main'
+        update_cache: no
+
+    - name: install nodejs
+      become: true
+      apt:
+        name: nodejs
