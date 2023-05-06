@@ -1,48 +1,50 @@
-# Lesson 06 Demo 2
-## Demonstrate YAML Scripting
+# Course Content
 
-Steps to be performed:
-1. Create a playbook
-2. Add YAML script to the playbook to install node
-3. Run Ansible YAML script
+This repository contains various resources and scripts used for the course, focusing on Ansible and Terraform.
 
-## Step 1: Create a playbook
-1.1 Use the below command to create a node.yml file
-    sudo vi node.yml
-1.2 Establish SSH key pair in the Linux system to have SSH connectivity with localhost using the following commands:
-    ssh-keygen -t rsa (Press Enter when asked for File and Paraphrase details)
-    cat .ssh/id_rsa.pub >> .ssh/authorized_keys
-    ssh localhost -p 42006 (Type yes when prompted)
-1.3 Now, add the host localhost in the Ansible host file /etc/ansible/hosts
-    sudo vi /etc/ansible/hosts
-1.4 When the file opens, add the below two lines of the code at the end of the file:
-    [webservers]
-    localhost:42006
+## Directory Structure
 
-## Step 2: Add YAML script to the playbook to install node
-2.1 Open the node.yaml file by using the below command and then add the following code
-    sudo vi node.yml
-2.2 Copy and paste the below code into the node.yml file:
-  
-  ```
-    ---
-    - hosts: webservers
-      become: true
-      tasks:
-       - name: add apt key for nodesource
-         become: true
-         apt_key: url=https://deb.nodesource.com/gpgkey/nodesource.gpg.key
-       - name: add repo for nodesource
-         become: true
-         apt_repository:
-                     repo: 'deb https://deb.nodesource.com/node_0.10 {{ ansible_distribution_release }} main'
-                     update_cache: no
-       - name: install nodejs
-         become: true
-         apt: name=nodejs
+- **6-ansible**
+  - **6.2-node-ansible-playbook**: Ansible playbook for installing Node.js.
+    - node.yml
+  - **6.3-apache-ansible-playbook**: Ansible playbook for installing Apache.
+    - apache.yaml
+  - **6.4-ansible-module**: Documentation on how to use Ansible modules.
+    - README.md
+  - **6.5-ansible-role**: Documentation on how to create and use Ansible roles.
+    - README.md
+  - **6.6-setup-terraform**: Scripts and instructions for setting up Terraform.
+    - README.md
+    - tf-installation.sh
+  - **6.7-S3-Bucket-Using-Terraform**: Instructions on how to create an S3 bucket using Terraform.
+    - README.md
+  - **6.8-tf-ec2-provisioning**: Terraform scripts for provisioning EC2 instances.
+    - README.md
+    - deployer
+    - deployer.pub
+    - main.tf
+    - slave-vm.tf
+    - ubuntu-vm.tf
+
+## Prerequisites
+
+Before using the resources in this repository, make sure you have the following prerequisites installed:
+
+- Ansible
+- Terraform
+- Git
+
+## How to Clone and Change Directory
+
+To clone the repository and change the directory, follow these steps:
+
+1. Open your terminal or command prompt.
+2. Run the following command to clone the repository:
+
 ```
-2.3 Save the file and exit using shift+esc+: and then type wq
+git clone https://github.com/manikcloud/DevOps-Tutorial.git
+```
+## Features
+This repository provides resources and scripts to help you learn and practice Ansible and Terraform. It includes Ansible playbooks for installing Node.js and Apache, documentation on how to use Ansible modules and roles, and Terraform scripts for setting up infrastructure and provisioning EC2 instances.
 
-## Step 3: Run Ansible YAML script
-3.1 Run apache.yaml file using the below command:
-    ansible-playbook node.yml
+Feel free to explore the repository and use the provided resources to enhance your learning experience.
