@@ -129,12 +129,7 @@ system_manager: admin@golinuxcloud.com
 
 cd ..
 rm -rf handlers tests vars
-Step 7: Create an Ansible Role Play
 ```
-
-
-
-
 
 
 ## Step 7: Create an Ansible Role Playbook
