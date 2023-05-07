@@ -1,3 +1,4 @@
+
 # Course Content
 
 This repository contains various resources and scripts used for the course, focusing on Ansible and Terraform.
@@ -48,3 +49,47 @@ git clone https://github.com/manikcloud/DevOps-Tutorial.git
 This repository provides resources and scripts to help you learn and practice Ansible and Terraform. It includes Ansible playbooks for installing Node.js and Apache, documentation on how to use Ansible modules and roles, and Terraform scripts for setting up infrastructure and provisioning EC2 instances.
 
 Feel free to explore the repository and use the provided resources to enhance your learning experience.
+
+# Ansible Setup on Ubuntu
+
+This guide will help you set up Ansible on an Ubuntu system.
+
+## Prerequisites
+
+- An Ubuntu system
+- SSH access to a remote server
+
+## Steps
+
+1. Install Ansible on the Ubuntu system:
+
+```
+sudo apt update
+sudo apt install -y ansible
+```
+
+2. Create an inventory file, for example, `inventory.ini`, and add your server details:
+
+```ini
+[my_servers]
+my_server ansible_host=18.209.59.137
+```
+
+3. Create an Ansible configuration file, `ansible.cfg`, and add the following content:
+
+```ini
+[defaults]
+inventory = inventory.ini
+remote_user = ubuntu
+private_key_file = ../deployer
+host_key_checking = False
+retry_files_enabled = False
+```
+
+4. Test the Ansible connection to the remote server with the following command:
+
+```
+ansible my_servers -m ping
+```
+
+Replace 'my_servers' with the appropriate group name from your inventory file.
