@@ -1,0 +1,33 @@
+---
+
+- name: This is a simple Playbook.
+  hosts: my_servers
+  become: yes
+  gather_facts: yes
+
+  tasks:
+    - name: 1. Ping the remote server
+      ping:
+    - name: 2. Create index file 
+      file:
+        path: /home/ubuntu/index.html
+        state: touch
+
+    - name: 3. Apache2
+      apt:
+        name: apache2
+        state: present  
+
+
+    - name: 4. Apache2-service
+      service:
+        name: apache2
+        state: restarted  
+
+    # # - name: 2. Un-Install git 
+    # #   apt:
+    # #     name: git
+    # #     state: present  
+
+
+    
