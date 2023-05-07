@@ -28,3 +28,33 @@ ansible webservers -m file -a 'dest=/root/sample.txt state=touch mode=600 owner=
 - ansible webservers -m apt -a 'name=git state=present' --become: This command uses the apt module to install the git package on the remote hosts listed under the [webservers] group in the Ansible inventory file. The apt module provides a way to manage packages on Debian-based systems. The --become flag is used to elevate privileges and run the command as the root user.
 
 - ansible webservers -m file -a 'dest=/root/sample.txt state=touch mode=600 owner=root group=root' --become: This command uses the file module to create a new file named sample.txt with root as the owner and group, and the file mode set to 600 on the remote hosts listed under the [webservers] group in the Ansible inventory file. The file module provides a way to manage files and directories on remote hosts. The --become flag is used to elevate privileges and run the command as the root user.
+
+
+# Step 1: Ansible Ad-hoc Command without Configuration Files
+```
+ansible all -i '18.209.59.137,' -m ping -u ubuntu --private-key ../deployer
+```
+
+# Step 2: Add Inventory File (inventory.ini)
+echo "[my_servers]\nmy_server ansible_host=18.209.59.137" > inventory.ini
+```
+
+ansible my_servers -i inventory.ini -m ping -u ubuntu --private-key ../deployer
+```
+
+
+# Step 3: Add Ansible Configuration File (ansible.cfg)
+
+echo -e "[defaults]\ninventory = inventory.ini\nremote_user = ubuntu\nprivate_key_file = ../deployer\nhost_key_checking = False\nretry_files_enabled = False" > ansible.cfg
+```
+
+ansible my_servers -m ping
+```
+
+
+# Step 4: Simplified Ansible Command with Configuration Files
+```
+
+ansible my_servers -m ping
+```
+
