@@ -3,7 +3,7 @@ provider "aws" {
   region = "us-east-1"
 }
 resource "aws_s3_bucket" "b" {
-  bucket = "my-tf-test-bucket-34561"
+  bucket = "my-tf-test-bucket-345611"
   acl    = "private"
 
   tags = {
