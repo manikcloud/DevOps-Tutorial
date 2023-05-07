@@ -1,9 +1,6 @@
-
-
 resource "aws_security_group" "allow_SSH_ubuntu" {
   name        = "allow_SSH_ubuntu"
   description = "Allow SSH inbound traffic"
-  #   vpc_id      = aws_vpc.main.id
 
 
   ingress {
@@ -40,20 +37,7 @@ resource "aws_instance" "ubuntu" {
     "Name" = "UBUNTU-22-04"
     "ENV"  = "Dev"
   }
-  # metadata_options {
-  #   http_endpoint = "disabled"
-  # }
-  # Type of connection to be established
-  connection {
-    type        = "ssh"
-    user        = "ubuntu"
-    private_key = file("./deployer")
-    host        = self.public_ip
-    timeout     = "10m"
-  }
-
-  associate_public_ip_address = true
-
+  
 
   depends_on = [aws_key_pair.deployer]
 
@@ -61,5 +45,5 @@ resource "aws_instance" "ubuntu" {
 
 output "ubuntu" {
   value       = aws_instance.ubuntu.public_ip
-  description = "description"
+  description = "Ubuntu vm public IP"
 }
