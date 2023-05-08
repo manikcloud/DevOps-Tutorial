@@ -1,14 +1,11 @@
 ---
-- hosts: all
+- hosts: my_servers
   become: true
 
   tasks:
-    - name: install apache2
+    - name: Install apache2
       apt: name=apache2 update_cache=no state=latest
-    - name: enabled mod_rewrite
-      apache2_module: name=rewrite state=present
-      notify:
-        - restart apache2
+      
 
   handlers:
     - name: restart apache2

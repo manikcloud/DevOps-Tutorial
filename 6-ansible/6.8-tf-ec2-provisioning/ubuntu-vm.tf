@@ -32,18 +32,19 @@ resource "aws_instance" "ubuntu" {
   ami                    = "ami-007855ac798b5175e"
   instance_type          = "t2.micro"
   key_name               = aws_key_pair.deployer.key_name
+  count                  = 3
   vpc_security_group_ids = ["${aws_security_group.allow_SSH_ubuntu.id}"]
   tags = {
-    "Name" = "UBUNTU-22-04"
+    "Name" = "UBUNTU-${count.index}"
     "ENV"  = "Dev"
   }
-  
+
 
   depends_on = [aws_key_pair.deployer]
 
 }
 
 output "ubuntu" {
-  value       = aws_instance.ubuntu.public_ip
+  value       = aws_instance.ubuntu.*.public_ip
   description = "Ubuntu vm public IP"
 }
