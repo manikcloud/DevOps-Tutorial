@@ -1,5 +1,14 @@
 # Version Control System
 
+
+## Table of Contents
+
+1. [Purpose of Git Branches](#purpose-of-git-branches)
+2. [Creating a Branch](#creating-a-branch)
+3. [Switching Between Branches](#switching-between-branches)
+4. [Merging Branches](#merging-branches)
+5. [Deleting a Branch](#deleting-a-branch)
+
 ## Introduction
 
 Version control systems (VCS) are essential tools for tracking changes in software projects, allowing you to maintain a complete history of modifications made to your codebase. This enables developers to easily collaborate, track progress, and revert changes if needed.
