@@ -1,4 +1,4 @@
-# DevOps-Tutorial for Jenkins 5h
+# DevOps-Tutorial for Jenkins 6
 DevOps-Tutorial
 # Caltech-DevOps Simplilearn PG Program
 
