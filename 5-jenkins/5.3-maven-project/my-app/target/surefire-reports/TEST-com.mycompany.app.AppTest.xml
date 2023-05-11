@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.mycompany.app.AppTest" time="0.042" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.mycompany.app.AppTest" time="0.016" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
     <property name="java.specification.version" value="11"/>
     <property name="sun.cpu.isalist" value=""/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/home/varunmanikoutlo/varun/DevOps-Tutorial/5-jenkins/5.3-maven-project/my-app/target/test-classes:/home/varunmanikoutlo/varun/DevOps-Tutorial/5-jenkins/5.3-maven-project/my-app/target/classes:/home/varunmanikoutlo/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/varunmanikoutlo/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
+    <property name="java.class.path" value="/home/nicepinkysahoo4/DevOps-Tutorial/DevOps-Tutorial/DevOps-Tutorial/5-jenkins/5.3-maven-project/my-app/target/test-classes:/home/nicepinkysahoo4/DevOps-Tutorial/DevOps-Tutorial/DevOps-Tutorial/5-jenkins/5.3-maven-project/my-app/target/classes:/home/nicepinkysahoo4/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/nicepinkysahoo4/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
     <property name="java.vm.vendor" value="Ubuntu"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.vendor.url" value="https://ubuntu.com/"/>
@@ -14,36 +14,36 @@
     <property name="os.name" value="Linux"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/varunmanikoutlo/varun/DevOps-Tutorial/5-jenkins/5.3-maven-project/my-app/target/surefire/surefirebooter7833339953640500318.jar /home/varunmanikoutlo/varun/DevOps-Tutorial/5-jenkins/5.3-maven-project/my-app/target/surefire 2023-05-06T04-50-04_163-jvmRun1 surefire4344132283997186016tmp surefire_013108013248152437099tmp"/>
+    <property name="sun.java.command" value="/home/nicepinkysahoo4/DevOps-Tutorial/DevOps-Tutorial/DevOps-Tutorial/5-jenkins/5.3-maven-project/my-app/target/surefire/surefirebooter5485097748395712298.jar /home/nicepinkysahoo4/DevOps-Tutorial/DevOps-Tutorial/DevOps-Tutorial/5-jenkins/5.3-maven-project/my-app/target/surefire 2023-05-11T13-59-24_216-jvmRun1 surefire10300217371686179842tmp surefire_016531317073733774176tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/home/varunmanikoutlo/varun/DevOps-Tutorial/5-jenkins/5.3-maven-project/my-app/target/test-classes:/home/varunmanikoutlo/varun/DevOps-Tutorial/5-jenkins/5.3-maven-project/my-app/target/classes:/home/varunmanikoutlo/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/varunmanikoutlo/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
+    <property name="surefire.test.class.path" value="/home/nicepinkysahoo4/DevOps-Tutorial/DevOps-Tutorial/DevOps-Tutorial/5-jenkins/5.3-maven-project/my-app/target/test-classes:/home/nicepinkysahoo4/DevOps-Tutorial/DevOps-Tutorial/DevOps-Tutorial/5-jenkins/5.3-maven-project/my-app/target/classes:/home/nicepinkysahoo4/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/nicepinkysahoo4/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="user.home" value="/home/varunmanikoutlo"/>
+    <property name="user.home" value="/home/nicepinkysahoo4"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="java.version.date" value="2023-01-17"/>
     <property name="java.home" value="/usr/lib/jvm/java-11-openjdk-amd64"/>
     <property name="file.separator" value="/"/>
-    <property name="basedir" value="/home/varunmanikoutlo/varun/DevOps-Tutorial/5-jenkins/5.3-maven-project/my-app"/>
+    <property name="basedir" value="/home/nicepinkysahoo4/DevOps-Tutorial/DevOps-Tutorial/DevOps-Tutorial/5-jenkins/5.3-maven-project/my-app"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/home/varunmanikoutlo/varun/DevOps-Tutorial/5-jenkins/5.3-maven-project/my-app/target/surefire/surefirebooter7833339953640500318.jar"/>
+    <property name="surefire.real.class.path" value="/home/nicepinkysahoo4/DevOps-Tutorial/DevOps-Tutorial/DevOps-Tutorial/5-jenkins/5.3-maven-project/my-app/target/surefire/surefirebooter5485097748395712298.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.18+10-post-Ubuntu-0ubuntu120.04.1"/>
-    <property name="user.name" value="varunmanikoutlo"/>
+    <property name="user.name" value="nicepinkysahoo4"/>
     <property name="path.separator" value=":"/>
     <property name="os.version" value="5.15.0-1035-aws"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
-    <property name="localRepository" value="/home/varunmanikoutlo/.m2/repository"/>
+    <property name="localRepository" value="/home/nicepinkysahoo4/.m2/repository"/>
     <property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-lts"/>
     <property name="java.io.tmpdir" value="/tmp"/>
     <property name="java.version" value="11.0.18"/>
-    <property name="user.dir" value="/home/varunmanikoutlo/varun/DevOps-Tutorial/5-jenkins/5.3-maven-project/my-app"/>
+    <property name="user.dir" value="/home/nicepinkysahoo4/DevOps-Tutorial/DevOps-Tutorial/DevOps-Tutorial/5-jenkins/5.3-maven-project/my-app"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
