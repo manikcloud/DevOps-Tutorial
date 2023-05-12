@@ -1,0 +1,102 @@
+---
+- hosts: aws_linux_vm
+  become: yes
+  vars:
+    db_name: wordpress
+    db_user: wordpress
+    db_password: secure-123
+    db_host: 34.230.43.235  # added DB_HOST
+    wp_table_prefix: wp_  # added wp_table_prefix
+
+
+  tasks:
+
+  - name: Update all packages to the latest version
+    yum:
+      name: '*'
+      state: latest
+
+  - name: Install python3-pip
+    yum:
+      name: python3-pip
+      state: present
+
+  - name: Install PyMySQL
+    pip:
+      name: pymysql
+      state: present
+
+
+  - name: Install PHP 7.2 from Amazon Linux Extras
+    command: amazon-linux-extras install -y php7.2
+
+  - name: Install necessary packages
+    yum:
+      name:
+        - httpd
+        - mariadb-server
+
+      state: latest 
+
+  - name: Start and enable Apache and MariaDB services
+    systemd:
+      name: "{{ item }}"
+      state: started
+      enabled: yes
+    loop:
+      - httpd
+      - mariadb
+
+  - name: Remove anonymous MySQL user
+    mysql_user:
+      name: ''
+      host_all: 
+      state: absent
+    notify: restart mysql
+
+  - name: Remove MySQL test database
+    mysql_db:
+      name: test
+      state: absent
+    notify: restart mysql
+
+  - name: Create new MySQL database
+    mysql_db:
+      name: "{{ db_name }}"
+      state: present
+  - name: Create new MySQL user
+    mysql_user:
+      name: "{{ db_user }}"
+      password: "{{ db_password }}"
+      priv: "*.*:ALL"
+      host: '%'
+      state: present
+    notify: restart mysql
+
+  - name: Download WordPress
+    get_url:
+      url: https://wordpress.org/latest.tar.gz
+      dest: /tmp/wordpress.tar.gz
+      mode: 0644
+
+  - name: Extract WordPress
+    unarchive:
+      src: /tmp/wordpress.tar.gz
+      dest: /var/www/html/
+      remote_src: yes
+
+  - name: Update WordPress config file
+    template:
+      src: ./wp-config.php.j2
+      dest: /var/www/html/wordpress/wp-config.php
+
+  - name: Restart Apache
+    systemd:
+      name: httpd
+      state: restarted
+
+  handlers:
+  - name: restart mysql
+    systemd:
+      name: mariadb
+      state: restarted
