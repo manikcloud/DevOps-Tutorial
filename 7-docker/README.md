@@ -212,12 +212,12 @@ WELCOME TO NGINX.
 
 
 ### Step 2:  Executing the file
-    2.1          Execute the Dockerfile (note that there is space between build and “.”)
+
+- 2.1 Execute the Dockerfile (note that there is space between build and “.”)
 
 ```
 sudo docker build . 
  
-
 ```
  
 
