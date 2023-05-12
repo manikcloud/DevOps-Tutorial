@@ -278,6 +278,7 @@ vi docker-compose.yml
 ```
 
 2.2   Add the following code snippet in the file:
+```
 version: '3'
 services:
   compose-test:
