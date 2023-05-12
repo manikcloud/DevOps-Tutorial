@@ -7,6 +7,20 @@
   - [Step 4: Listing all the containers](#step-4-listing-all-the-containers)
   - [Step 5: Deleting the container](#step-5-deleting-the-container)
   - [Step 6: Removing the image](#step-6-removing-the-image)
+- [Lesson 7 Demo 3: Creating a Docker Image](#lesson-7-demo-3)
+  - [Step 1: Creating the Dockerfile](#step-1-creating-the-dockerfile)
+  - [Step 2: Executing the Dockerfile](#step-2-executing-the-dockerfile)
+- [Lesson 7 Demo 4: Docker Compose Setup](#lesson-7-demo-4)
+  - [Step 1: Setting up docker-compose](#step-1-setting-up-docker-compose)
+  - [Step 2: Creating a docker-compose file](#step-2-creating-a-docker-compose-file)
+- [Lesson 7 Demo 5: Docker Registry](#lesson-7-demo-5)
+  - [Step 1: Pulling a Linux container](#step-1-pulling-a-linux-container)
+  - [Step 2: Pushing the image to the local repository](#step-2-pushing-the-image-to-the-local-repository)
+  - [Step 3: Running the new image](#step-3-running-the-new-image)
+- [Lesson 7 Demo 6: Docker Networking with SSHs](#lesson-7-demo-6)
+  - [Step 1: Creating a container, and committing it](#step-1-creating-a-container-and-committing-it)
+  - [Step 2: Creating a bridge network, and finding its IP address](#step-2-creating-a-bridge-network-and-finding-its-ip-address)
+  - [Step 3: Connecting the network from another SSH server](#step-3-connecting-the-network-from-another-ssh-server)
 
 
 # Lesson 7 Demo 2
