@@ -292,7 +292,13 @@ services:
 
 ```
  
+- In this updated version, I've added version: '3' at the top. This is the version of the Docker Compose file format, and it's generally a good idea to specify it.
 
+- I also replaced links with depends_on, which makes sure the compose-db service is started before the compose-test service.
+
+- I've replaced the command for the compose-test service to keep the container running indefinitely. Your previous command would execute curl once and then the container would exit. If you need to run curl, you can do it manually by exec-ing into the running container.
+
+- Finally, expose only exposes the port to linked services; it doesn't map the port to the host. If you want to access the Redis service from outside of the Docker network (from your host machine, for example), you should use ports instead. If not, you can stick with expose.
 
 
 
