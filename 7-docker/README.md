@@ -1,3 +1,12 @@
+# Docker
+
+- [Lesson 7 Demo 2: Performing CRUD Operation on Containers](#lesson-7-demo-2)
+  - [Step 1: Pulling a Docker image](#step-1-pulling-a-docker-image)
+  - [Step 2: Creating a new container](#step-2-creating-a-new-container)
+  - [Step 3: Stopping the container](#step-3-stopping-the-container)
+  - [Step 4: Listing all the containers](#step-4-listing-all-the-containers)
+  - [Step 5: Deleting the container](#step-5-deleting-the-container)
+  - [Step 6: Removing the image](#step-6-removing-the-image)
 
 
 # Lesson 7 Demo 2
