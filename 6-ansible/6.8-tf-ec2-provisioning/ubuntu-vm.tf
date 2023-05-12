@@ -32,7 +32,7 @@ resource "aws_instance" "ubuntu" {
   ami                    = "ami-007855ac798b5175e"
   instance_type          = "t2.micro"
   key_name               = aws_key_pair.deployer.key_name
-  count                  = 3
+  count                  = 1
   vpc_security_group_ids = ["${aws_security_group.allow_SSH_ubuntu.id}"]
   tags = {
     "Name" = "UBUNTU-${count.index}"
