@@ -198,7 +198,7 @@ CMD ["nginx", "-g", "daemon off;"]
 1.4      Create another file in the same directory
 
 ```
-vi index.nginx-debian.html
+vi index.html
 
 ```
  
