@@ -1,0 +1,64 @@
+---
+- name: LAMP and Wordpress Installation
+  hosts: aws_linux_vm
+  become: yes
+  vars:
+    db_name: wordpress
+    db_user: wordpress
+    db_password: secure-123
+    db_host: 44.202.246.212
+    wp_table_prefix: wp_
+    
+  tasks:
+    - name: Update APT package cache
+      ansible.builtin.apt:
+        update_cache: yes
+
+    - name: Install LAMP stack
+      ansible.builtin.apt:
+        name:
+          - apache2
+          - mysql-server
+          - php
+          - libapache2-mod-php
+          - php-mysql
+          - python3-pymysql
+        state: present
+
+    - name: Ensure Apache is running
+      ansible.builtin.service:
+        name: apache2
+        state: started
+        enabled: yes
+
+    - name: Ensure MySQL Service is running
+      ansible.builtin.service:
+        name: mysql
+        state: started
+        enabled: yes
+
+    - name: Create WordPress database
+      community.mysql.mysql_db:
+        login_host: "{{ db_host }}"
+        login_user: "{{ db_user }}"
+        login_password: "{{ db_password }}"
+        name: "{{ db_name }}"
+        state: present
+
+    - name: Download WordPress
+      get_url:
+        url: https://wordpress.org/latest.tar.gz
+        dest: /tmp/wordpress.tar.gz
+        mode: '0644'
+
+    - name: Extract WordPress archive
+      ansible.builtin.unarchive:
+        src: /tmp/wordpress.tar.gz
+        dest: /var/www/html/
+        remote_src: yes
+
+    - name: Update WordPress config file
+      template:
+        src: ./wp-config.php.j2
+        dest: /var/www/html/wordpress/wp-config.php
+        mode: '0644'
