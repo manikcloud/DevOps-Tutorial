@@ -278,20 +278,17 @@ vi docker-compose.yml
 ```
 
 2.2   Add the following code snippet in the file:
-version: '2'
-
-
-```
+version: '3'
 services:
   compose-test:
     image: centos
-    links:
+    command: /bin/bash -c "while true; do sleep 30; done"
+    depends_on:
       - compose-db
-    command: /usr/bin/curl compose-db:6379
   compose-db:
     image: redis
-    expose:
-      - "6379"
+    ports:
+      - "6379:6379"
 
 ```
  
