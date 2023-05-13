@@ -1,0 +1,15 @@
+[aws_linux_vm]
+; wp-server ansible_host=54.158.174.154
+; wp-server1 ansible_host=34.230.43.235
+
+[ubuntu-vm]
+my_server_1 ansible_host=3.88.212.253
+
+
+; my_server_2 ansible_host=3.94.145.119
+; my_server_3 ansible_host=54.196.214.244
+; ubuntu = [
+;   "",
+;   "54.166.96.63",
+;   "35.172.211.176",
+; ]
