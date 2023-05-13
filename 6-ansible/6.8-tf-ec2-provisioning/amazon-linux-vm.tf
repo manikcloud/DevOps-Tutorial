@@ -34,13 +34,13 @@ resource "aws_key_pair" "deployer3" {
 }
 
 resource "aws_instance" "linux" {
-  ami           = "ami-0c02fb55956c7d316"
-  instance_type = "t3.micro"
-  key_name      = aws_key_pair.deployer3.key_name
-  count         = 2
+  ami                    = "ami-0c02fb55956c7d316"
+  instance_type          = "t3.micro"
+  key_name               = aws_key_pair.deployer3.key_name
+  count                  = 3
   vpc_security_group_ids = ["${aws_security_group.allow_ssh_slave.id}"]
   tags = {
-    "Name" = "WP-Node"
+    "Name" = "WP-Node-${count.index}"
     "ENV"  = "Dev"
   }
 
