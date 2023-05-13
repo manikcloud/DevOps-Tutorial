@@ -5,7 +5,7 @@
     db_name: wordpress
     db_user: wordpress
     db_password: secure-123
-    db_host: 34.230.43.235  # added DB_HOST
+    db_host: 3.84.131.121  # added DB_HOST
     wp_table_prefix: wp_  # added wp_table_prefix
 
 
@@ -64,6 +64,7 @@
     mysql_db:
       name: "{{ db_name }}"
       state: present
+      
   - name: Create new MySQL user
     mysql_user:
       name: "{{ db_user }}"
