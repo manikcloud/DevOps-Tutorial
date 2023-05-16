@@ -5,7 +5,7 @@
     db_name: wordpress
     db_user: wordpress
     db_password: secure-123
-    db_host: 34.230.43.235  # added DB_HOST
+    db_host: 18.209.168.230  # added DB_HOST
     wp_table_prefix: wp_  # added wp_table_prefix
 
 
