@@ -1,26 +1,13 @@
-import logging
-
-# Add these lines at the beginning of your app.py file
-logging.basicConfig(level=logging.DEBUG)
-
-# Your existing code goes here
-from flask import Flask, request
+from flask import Flask
 from redis import Redis
 
 app = Flask(__name__)
 redis = Redis(host='redis', port=6379)
 
 @app.route('/')
-
 def hello():
-    return 'Hello World! This is a simple voting application.'
+    count = redis.incr('hits')
+    return 'Hello World! I have been seen {} times.\n'.format(count)
 
-@app.route('/vote', methods=['POST'])
-def vote():
-    option = request.form.get('option')
-    redis.incr(option)
-    return f"Voted for: {option}"
-
-@app.route('/results')
-def results():
-    return {option.decode(): int(redis.get(option)) for option in redis.keys()}
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=8000, debug=True)
