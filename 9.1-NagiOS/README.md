@@ -17,7 +17,7 @@ How to Install Nagios Monitoring Tool
 
 
 ```
- sudo apt update
+ sudo apt update -y
 
 ```
  
@@ -31,7 +31,9 @@ How to Install Nagios Monitoring Tool
  
 - 2.2	Execute the below command to install Nagios XI
 
+```
 curl https://assets.nagios.com/downloads/nagiosxi/install.sh | sh
+```
 
 **Note**: The installation takes around 20 mins. Please wait patiently till you get the Installation Complete message as shown below
 
