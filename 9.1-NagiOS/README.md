@@ -17,7 +17,7 @@ How to Install Nagios Monitoring Tool
 
 
 ```
- sudo apt update -y
+ sudo apt update -y 
 
 ```
  
