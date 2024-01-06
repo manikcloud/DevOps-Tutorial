@@ -1,0 +1,104 @@
+
+    1  cat /etc/issue
+    2  clear
+    3  ls
+    4  pwd
+    5  ls -l
+    6  date
+    7  ls -l
+    8  cat hello > a.txt
+    9  ll
+   10  date 
+   11  clear 
+   12  ls -la
+   13  ls -lah
+   14  ls -lh
+   15  ls -lht
+   16  ls -lhtr
+   17  ls -larth 
+   18  mkdir devops
+   19  ll
+   20  mkdir -p  mgmt/dev/non-prod/code
+   21  ll 
+   22  cd mgmt/
+   23  ll
+   24  ll *
+   25  ll **
+    
+   28  ll *
+   29  tree
+   30  apt  install tree
+   31  sudo apt  install tree
+   32  tree
+   33  sudo -i
+   34  sudo su 
+   35  cd dev/non-prod/
+   36  cd /home/varunmanikoutlo/mgmt/dev/
+   37  cd non-prod/
+   38  cd ..
+   39  cd mgmt/dev/non-prod/
+   40  cd ../../
+   41  cd -
+   42  tree
+   43  rmdir -r dev
+   44  rm -rf dev
+   45  tree
+   46  touch calc.java
+   47  ls
+   48  cat calc.java 
+   49  cat calc.java index.html calc.py 
+   50  touch calc.java index.html calc.py 
+   51  ls
+   52  rm calc.java 
+   53  ls
+   54  rm *
+   55  ll
+   56  cat Hi, we are learning Linux.
+   57  cat Hi, we are learning Linux. > index.html
+   58  cat "Hi, we are learning Linux." > index.html
+   59  echo "Hi, we are learning Linux." > index.html
+   60  echo "my name is: XYZ"
+   61  ls 
+   62  cat index.html 
+   63  ll
+   64  vim contacts.html
+   65  ls
+   66  nano aboutus.html
+   67  ll
+   68  cat aboutus.html 
+   69  history 
+   70  nano sales.html
+   71  ls
+   72  history 
+   73  ll
+   74  vim install.sh
+   75  ll
+   76  chmod u+x
+   77  chmod u+x install.sh 
+   78  ls
+   79  ll
+   80  chmod ug+x install.sh 
+   81  ll
+   82  chmod ug-w install.sh 
+   83  ll
+   84  mkdir test
+   85  mv install.sh test/
+   86  cd test/
+   87  ll
+   88  user>group>others chmod 777 install.sh 
+   89  chmod 777 install.sh 
+   90  ll
+   91  chmod 774 install.sh 
+   92  ll
+   93  echo "hi this is php page" > index.php
+   94  ll
+   97  
+  101  cat /etc/passwd | grep -i tomcat
+  102  ll
+  103  
+  110  sudo chown tomcat:tomcat index.php 
+  111  ll
+  112  sudo chown tomcat: install.sh 
+  113  ll
+  114  history | cut -8
+  115  history > jan-06-2024.txt
