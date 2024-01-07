@@ -268,15 +268,15 @@ This command will create a new branch with the specified name and switch
 
 # SSH Connectivity to your Simplilearn lab VM 
 
-- Step 1 - Loging to github
+- Step 1: Loging to github
 - Step 2: Create a Repo 
-- Step 3 : Click on your user profile and clicl on stetting 
+- Step 3: Click on your user profile and clicl on stetting 
 - step 4: Click on ssh key 
-- step 4.: Copy and paste your pub key 
+- step 5: Copy and paste your pub key 
 - Step 6: Click OK 
 - Step 7: Clone your repo 
 
-## create ssh key in your lab vm 
+## Create ssh key in your lab vm 
 
 - Step 1: Login to lab VM and open terminal 
 - Step 2: runthe following command 
@@ -294,7 +294,7 @@ cat ~/.ssh/id_rsa.pub
 - Step 4 : Paste the content in privious step 6 
 
 
-# Common error while stting the above steps 
+# Common error while setting the above steps 
 
 ```
 git clone git@github.com:sindhugowda1991/java.calculatore-delete.git
