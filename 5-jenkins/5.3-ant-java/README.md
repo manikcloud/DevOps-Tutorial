@@ -15,10 +15,6 @@ Ensure both are installed on your system. You can verify by running `java -versi
 Create a project directory and set up the following structure:
 
 
-HelloWorldAnt/
-├── src/
-└── build.xml
-
 
 Navigate to your project directory:
 ```bash
@@ -26,7 +22,7 @@ mkdir HelloWorldAnt
 cd HelloWorldAnt
 ```
 
-Step 2: Java Source File
+- Step 2: Java Source File
 Inside the src directory, create a file HelloWorld.java:
 
 
