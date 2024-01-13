@@ -1,0 +1,11 @@
+<project name="HelloWorld" default="run">
+    <target name="compile">
+        <mkdir dir="bin"/>
+        <javac srcdir="src" destdir="bin"/>
+    </target>
+
+    <target name="run" depends="compile">
+        <java classname="HelloWorld" classpath="bin"/>
+    </target>
+</project>
+
