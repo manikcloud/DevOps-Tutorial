@@ -113,3 +113,55 @@ terraform apply
 2.8 Verify the creation of S3 bucket in the AWS Management console.
 
 
+---
+
+# Creating and Using Secret Access Keys and Access IDs in AWS IAM for Linux VMs
+
+## Steps
+
+1. **Create an IAM User:**
+   - Access the AWS Management Console and navigate to IAM.
+   - Click "Users" -> "Add user."
+   - Assign a meaningful username and select "Programmatic access."
+   - Click "Next: Permissions."
+
+2. **Attach Permissions:**
+   - Choose an existing policy or create a custom one, granting only necessary permissions.
+   - Click "Next: Tags."
+   - Optionally add tags.
+   - Click "Next: Review."
+   - Verify details and click "Create user."
+
+3. **Securely Store Access Key and ID:**
+   - Immediately download and securely store the secret access key (not retrievable later).
+   - Note the access key ID.
+
+4. **Add Credentials to Linux VM:**
+   - Choose a secure storage method:
+
+     - **Environment variables (temporary):**
+       ```bash
+       export AWS_ACCESS_KEY_ID=YOUR_ACCESS_KEY_ID
+       export AWS_SECRET_ACCESS_KEY=YOUR_SECRET_ACCESS_KEY
+       ```
+
+     - **AWS CLI configuration file:**
+       Create `~/.aws/credentials`:
+       ```
+       [default]
+       aws_access_key_id = YOUR_ACCESS_KEY_ID
+       aws_secret_access_key = YOUR_SECRET_ACCESS_KEY
+       
+
+     - **AWS SDK environment variables:**
+       Set `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` for applications using the SDK.
+
+## Security Best Practices
+
+- **Avoid hardcoding access keys:** Use AWS Secrets Manager or similar for secure storage and rotation.
+- **Regularly rotate access keys:** Enhance security.
+- **Use strong passwords for IAM users:** Strengthen protection.
+- **Enable MFA:** Add a layer of security.
+- **Implement AWS CloudTrail:** Log API activity for auditing and analysis.
+- **Regularly review and update permissions:** Maintain least privilege.
+
