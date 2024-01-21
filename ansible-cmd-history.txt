@@ -1,0 +1,147 @@
+ll
+git clone 
+git clone git@github.com:manikcloud/DevOps-Tutorial.git
+ssh-keygen 
+cat ~/.ssh/id_rsa.pub 
+git clone git@github.com:manikcloud/DevOps-Tutorial.git
+ll
+cd DevOps-Tutorial/
+code .
+cd DevOps-Tutorial/6-ansible-terraform/6.8-tf-ec2-provisioning/ansible/
+ansible-playbook ping.yaml 
+ansible all -m shell -a "apt upda
+ansible all -m shell -a "apt update -y" become true
+ansible all -m shell -a "apt update -y" 
+ansible all -m shell -a "apt update -y" -b=yes
+ansible all -m shell -a "apt update -y" -b true
+ansible all -m shell -a "apt update -y" -b=true
+ansible-playbook ping.yaml 
+code
+ll
+cd DevOps-Tutorial/
+ls
+mv 6-ansible 6-ansible-terraform
+ll
+cd 6-ansible-terraform/
+ls
+mkdir 6.6.1-tf-local-file
+cd 6.6.1-tf-local-file/
+terraform 
+terraform -version 
+vim main.tf
+terraform init
+cleaf
+terraform plan
+terraform apply
+ll
+cat index.html 
+git add . && git commit-am"adding tf local"
+git add . && git commit -am"adding tf local"
+git push 
+resource "local_file" "foo" {
+git push 
+cd ..
+git add . && git commit -am"adding tf local" && git push 
+git config --global user.name "varun"
+git add . && git commit -am"adding tf local" && git push 
+ll
+ansible
+ansible --version
+ansible -m ping localhost
+ansible -m ping localhost -v
+ansible -m ping localhost -vv
+ansible -m ping localhost -vvv
+ansible -m ping localhost -vvvv
+cd 6-ansible-terraform/6.8-tf-ec2-provisioning/
+ll
+cd ..
+ll
+ls
+cd 6.8-tf-ec2-provisioning/
+ls
+ansible all -i '3.87.250.203,' -m ping -u ubuntu --private-key ../deployer
+ansible all -i '3.87.250.203,' -m ping -u ubuntu --private-key deployer
+chmod 400 deployer
+ansible all -i '3.87.250.203,' -m ping -u ubuntu --private-key deployer
+ansible all -i '3.87.250.203,' -m ping -u ubuntu --private-key deployer -v
+ansible all -i '3.87.250.203,' -m ping -u ubuntu --private-key deployer -vv
+ansible all -i '3.87.250.203,' -m ping -u ubuntu --private-key deployer -vvvv
+ansible all -i '3.87.250.203, 54.198.128.135, 107.22.117.179' -m ping -u ubuntu --private-key deployer
+ansible all -i ' 54.198.128.135' -m ping -u ubuntu --private-key deployer
+ls
+ansible all -i '54.198.128.135' -m ping -u ubuntu --private-key deployer
+vim ~/.ssh/known_hosts 
+ansible all -i '54.198.128.135' -m ping -u ubuntu --private-key deployer
+ansible all -i '3.87.250.203,' -m ping -u ubuntu --private-key deployer 
+ansible all -i '54.198.128.135,' -m ping -u ubuntu --private-key deployer 
+ansible all -i '107.22.117.179,' -m ping -u ubuntu --private-key deployer 
+ll
+cd ansible/
+ll
+cd ..
+ansible all -i ansible/inventory.ini -m ping
+cd -
+ll
+ansible all -i inventory.ini -m ping
+ansible all -i inventory.ini -m shell -a "la -l"
+ansible all -i inventory.ini -m shell -a "ls -l"
+ansible all -i inventory.ini -m shell -a "pwd"
+ansible all -i inventory.ini -m shell -a "touch index.txt"
+ansible all -i inventory.ini -m shell -a "ls -l"
+ansible -m ping localhost -v
+ansible -m ping localhost -vv
+cd ../../..
+ansible -m ping localhost -vv
+vim /etc/ansible/ansible.cfg
+cd -
+ansible all -m shell -a "ls -l"
+ansible all -m shell -a "rm -rf index.txt"
+ansible all -m shell -a "ls -l"
+ansible all -m setup
+ll
+ansible-playbook ping.yaml 
+ansible all -m shell -a "ls -l"
+ansible-playbook ping.yaml 
+ansible-doc -l
+ansible-doc apt
+q   q
+ansible-doc aptans
+cd 6-ansible-terraform/6.8-tf-ec2-provisioning/
+terraform plan
+terraform apply
+terraform output
+cd 6-ansible-terraform/6.7-S3-Bucket-Using-Terraform/
+ll
+terraform ini
+terraform init
+terraform plan
+terraform apply
+terraform plan
+terraform apply
+terraform plan
+terraform apply
+cd ..
+git add . 
+git commit -am "adding creds"
+git push 
+ll
+cd 6-ansible-terraform/
+ll
+cd 6.8-tf-ec2-provisioning/
+ll
+cd ..
+cd -
+terraform init
+terraform plan
+terraform apply
+terraform plan
+terraform apply
+terraform destroy
+git push 
+cd ..
+git add .
+git commit -am"adding cred.tf"
+git push 
+cd DevOps-Tutorial/
+code .
+history | cut -c 8- > ansible-cmd-history.txt
