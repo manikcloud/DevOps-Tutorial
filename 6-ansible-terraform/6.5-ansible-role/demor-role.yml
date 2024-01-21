@@ -2,8 +2,8 @@
 
 ---
 - name: use demor role playbook
-  hosts: my_server
-  user: ansible
+  hosts: localhost
+  user: ubuntu
   become: true
 
   roles:
