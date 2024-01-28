@@ -1,5 +1,5 @@
 # Docker
-
+- [# Docekr basic commands & their flags](#Docekr-basic-commands-their-flags)
 - [Lesson 7 Demo 2: Performing CRUD Operation on Containers](#lesson-7-demo-2)
   - [Step 1: Pulling a Docker image](#step-1-pulling-a-docker-image)
   - [Step 2: Creating a new container](#step-2-creating-a-new-container)
@@ -21,6 +21,26 @@
   - [Step 1: Creating a container, and committing it](#step-1-creating-a-container-and-committing-it)
   - [Step 2: Creating a bridge network, and finding its IP address](#step-2-creating-a-bridge-network-and-finding-its-ip-address)
   - [Step 3: Connecting the network from another SSH server](#step-3-connecting-the-network-from-another-ssh-server)
+
+
+
+# Docekr basic commands their flags
+
+| Command | Description | Flags/Options |
+|---------|-------------|---------------|
+| `docker run` | Run a new container | `-d` (detached), `-p` (port mapping), `--name` (name of the container), `-e` (environment variables) |
+| `docker ps` | List running containers | `-a` (all containers), `--format` (format output) |
+| `docker stop` | Stop a running container | `<container_id/name>` (ID or name of the container) |
+| `docker rm` | Remove a container | `-f` (force), `<container_id/name>` |
+| `docker images` | List Docker images | `-a` (all images), `--format` (format output) |
+| `docker rmi` | Remove a Docker image | `<image_id/name>` (ID or name of the image), `-f` (force) |
+| `docker build` | Build an image from a Dockerfile | `-t` (tag/name of the image), `<path_to_Dockerfile>` |
+| `docker pull` | Pull an image from a registry | `<image_name>` (name of the image) |
+| `docker push` | Push an image to a registry | `<image_name>` (name of the image) |
+| `docker exec` | Execute a command in a running container | `-it` (interactive terminal), `<container_id/name>` (ID or name of the container), `<command>` (command to execute) |
+| `docker logs` | Fetch the logs of a container | `<container_id/name>` (ID or name of the container), `--tail` (number of lines to show) |
+| `docker network` | Manage Docker networks | `create`, `inspect`, `ls`, `rm` (subcommands for network management) |
+| `docker volume` | Manage Docker volumes | `create`, `inspect`, `ls`, `rm` (subcommands for volume management) |
 
 
 # Lesson 7 Demo 2
