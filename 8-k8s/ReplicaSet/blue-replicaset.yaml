@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+
+kind: ReplicaSet
+
+metadata:
+  name: blue-replicaset
+  labels:
+    application: web-app
+
+spec:
+  template:
+    metadata:
+      name: blue-app
+      labels:
+        env: dev
+        application: web-app
+        color: blue
+    spec:
+      containers:
+        - name: httpd
+          image: varunmanik/httpd:blue
+  selector:
+    matchLabels:
+      color: blue
+  replicas: 5      

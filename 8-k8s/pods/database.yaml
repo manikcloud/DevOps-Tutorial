@@ -1,0 +1,17 @@
+apiVersion:vi
+
+kind: Pod
+
+metadata: 
+  name : postgress-database
+  labels:
+    tier: db-tier
+
+spec:
+  containers:
+    - name: postgres
+      image: postgres
+      env:  
+        - name: db_pass
+          value: 123456
+

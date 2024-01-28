@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+
+kind: Deployment 
+
+metadata:
+  name: web-app-deployment
+  labels:
+    application: web-app
+
+spec:
+  selector:
+    matchLabels:
+      application: web-app  
+  replicas: 3  
+  template:
+    metadata:
+      name: web2
+      labels:
+        application: web-app 
+        env: dev 
+        color: blue
+      
+    spec:
+      containers:
+        - name: blue
+          image: varunmanik/httpd:v1-blue   

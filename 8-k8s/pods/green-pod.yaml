@@ -1,0 +1,14 @@
+apiVersion: v1
+
+kind: Pod
+metadata:
+  name: green-app
+  labels:
+    env: dev
+    application: web-app
+    color: green
+
+spec:
+  containers:
+    - name: httpd
+      image: varunmanik/httpd:green

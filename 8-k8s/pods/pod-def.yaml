@@ -1,0 +1,12 @@
+apiVersion: v1
+
+
+kind: Pod
+
+metadata:
+  name: pod-def
+
+spec:
+  containers:
+    - name: web-blue
+      image: varunmanik/httpd:blue

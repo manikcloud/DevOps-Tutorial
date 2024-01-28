@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+
+kind: ReplicaSet
+
+metadata:
+  name: sl-replicaset
+  labels:
+    application: web-app
+
+spec:
+  selector:
+    matchLabels:
+      application: web-app
+  replicas: 20
+  template:
+    metadata:
+      name: web2
+      labels:
+        application: web-app 
+        env: dev 
+      
+    spec:
+      containers:
+        - name: httpd
+          image: varunmanik/httpd:alpine

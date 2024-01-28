@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: web-server
+  labels:
+    env: dev
+    acconut: non-prod
+
+spec:
+  containers:
+    - name: nginx-server
+      image: nginx:alpine
+
+

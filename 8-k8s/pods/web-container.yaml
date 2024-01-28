@@ -1,0 +1,17 @@
+apiVersion: v1
+
+kind: Pod
+
+metadata:
+
+  name: web-server
+
+spec:
+
+  containers:
+
+    - name: web-container
+
+      image: httpd
+
+      
