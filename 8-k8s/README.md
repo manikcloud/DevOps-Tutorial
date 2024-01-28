@@ -227,9 +227,8 @@ kubectl taint nodes  ip-172-31-18-183 node-role.kubernetes.io/master-
 ```
 
 sudo kubectl get pods 
- 
 ```
-
+```
 # kubectl commands
 
 ```
