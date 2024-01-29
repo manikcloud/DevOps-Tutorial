@@ -1,6 +1,47 @@
-# DevOps-Tutorial
-## DevOps-Tutorial By Varun Kumar Manik.
-- Sending from User.
+# DevOps Tutorial
+
+Welcome to the [DevOps Tutorial Repository](https://github.com/manikcloud/DevOps-Tutorial/tree/main), a key resource for AWS-focused DevOps learning! This repository is an extensive collection of tutorials and guides, specifically curated for those leveraging AWS in their DevOps practices. Whether you're just starting your journey in DevOps, or you're an experienced practitioner seeking to deepen your expertise with AWS tools and methodologies, this repository is tailored for you.
+
+## Emphasis on AWS and DevOps
+
+Our tutorials and resources provide in-depth coverage of various DevOps tools and practices, with a special focus on integrating them within the AWS ecosystem. AWS offers a broad set of services and tools that are crucial in the DevOps landscape, and our repository aims to help you harness these capabilities to their fullest potential.
+
+## Ideal for All Skill Levels
+
+Whether you're a beginner who's curious about AWS and DevOps, or a seasoned DevOps professional looking to integrate more AWS services into your workflow, this repository has something for everyone. It's designed to guide you through the nuances of AWS services and how they can optimize your DevOps processes.
+
+## Repository Contents
+
+1. **[Linux Tutorial](https://github.com/manikcloud/DevOps-Tutorial/tree/main/Linux_Tutorial):** Dive into the world of Linux with our tutorials, starting with the `history-of-jan-06-2024.txt`, a comprehensive guide to Linux basics and advanced concepts.
+
+2. **[Git](https://github.com/manikcloud/DevOps-Tutorial/tree/main/2-Git):** Master version control with Git. Our tutorials provide insights from basic usage to advanced Git strategies and workflows.
+
+3. **[Jenkins](https://github.com/manikcloud/DevOps-Tutorial/tree/main/5-jenkins):** Learn about Jenkins, a cornerstone tool for continuous integration and continuous deployment (CI/CD).
+
+4. **[Ansible and Terraform](https://github.com/manikcloud/DevOps-Tutorial/tree/main/6-ansible-terraform):** Explore the world of infrastructure as code (IaC) with Ansible and Terraform tutorials, perfect for automating your infrastructure setup.
+
+5. **[Docker](https://github.com/manikcloud/DevOps-Tutorial/tree/main/7-docker):** Delve into containerization with Docker. Understand how to containerize applications and manage them effectively.
+
+6. **[Kubernetes (k8s)](https://github.com/manikcloud/DevOps-Tutorial/tree/main/8-k8s):** Get hands-on with Kubernetes, a powerful system for automating deployment, scaling, and management of containerized applications.
+
+7. **[Nagios](https://github.com/manikcloud/DevOps-Tutorial/tree/main/9.1-NagiOS):** Learn about Nagios for monitoring systems, networks, and infrastructure.
+
+## Additional Resources
+
+- **[Ansible Command History](https://github.com/manikcloud/DevOps-Tutorial/blob/main/ansible-cmd-history.txt):** A log of practical Ansible commands for reference.
+- **[VS Code Installation Script](https://github.com/manikcloud/DevOps-Tutorial/blob/main/vs-code-installation.sh):** A handy script for installing VS Code, a popular editor among DevOps professionals.
+
+## Contribution
+
+Your contributions to enhance or extend the tutorials and resources in this repository are most welcome! Feel free to fork the repository, make your changes, and submit a pull request.
+
+Happy learning, and let's make DevOps easy and accessible for everyone!
+
+---
+
+*Disclaimer: The contents of this repository are intended for educational purposes. Please ensure to test and validate in a controlled environment before applying in production.*
+----
+
 # Caltech-DevOps Simplilearn PG Program
 
 This repository contains course materials for the Caltech-DevOps Simplilearn Postgraduate Program.
