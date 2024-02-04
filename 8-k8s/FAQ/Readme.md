@@ -123,4 +123,56 @@ This guide explains the components of the script that creates Kubernetes resourc
    chmod +x create-pv-pvc-statefulset.sh
 ./create-pv-pvc-statefulset.sh
 ```
+---
+
+# Using Vault in Jenkins
+
+HashiCorp Vault is a tool for secrets management, allowing you to securely store and access sensitive data like passwords, tokens, and keys. Integrating Vault with Jenkins can significantly enhance the security of your CI/CD pipelines by providing a secure way to handle credentials and other sensitive information.
+
+## Benefits of Integrating Vault with Jenkins
+
+- **Security**: Keeps sensitive data out of your build logs and source code.
+- **Centralization**: Manages all your secrets in one place, making them easier to rotate, revoke, and keep track of.
+- **Auditing**: Vault offers detailed audit logs, allowing you to track access to secrets, which is invaluable for compliance and security.
+
+## How to Use Vault with Jenkins
+
+### Step 1: Install Vault Plugin in Jenkins
+
+First, you need to install the [HashiCorp Vault Plugin](https://plugins.jenkins.io/hashicorp-vault-plugin/) for Jenkins. This can be done through the "Manage Jenkins" > "Manage Plugins" menu in the Jenkins UI.
+
+### Step 2: Configure Vault in Jenkins
+
+After installing the plugin, configure Jenkins to communicate with your Vault server:
+
+1. Go to "Manage Jenkins" > "Configure System".
+2. Find the Vault section and add a new Vault configuration.
+3. Enter your Vault Server URL and the Vault Credential.
+
+### Step 3: Set Up Vault Credentials
+
+Vault credentials in Jenkins can be set up as follows:
+
+1. Navigate to "Credentials" in Jenkins.
+2. Choose the appropriate scope and click "Add Credentials".
+3. Select "Vault Token" or the appropriate credential type.
+4. Enter your Vault Token and other details as necessary.
+
+### Step 4: Accessing Secrets in Jenkins Jobs
+
+To access Vault secrets in your Jenkins jobs:
+
+1. In your job configuration, add a "Build Environment" step.
+2. Select "Vault Secrets" and configure the Vault Key/Values you wish to inject into the build environment.
+3. Use the injected environment variables in your build steps.
+
+## Best Practices
+
+- **Least Privilege**: Grant Jenkins access only to the secrets it needs, nothing more.
+- **Audit**: Regularly review access logs and rotate secrets.
+- **Secure Communication**: Ensure communication between Jenkins and Vault is over HTTPS to prevent eavesdropping.
+
+## Conclusion
+
+Integrating Vault with Jenkins allows you to manage and inject secrets into your CI/CD pipelines securely. By centralizing secret management, you not only improve the security posture of your development environment but also make managing and rotating secrets much more manageable.
 
