@@ -119,9 +119,12 @@ This guide explains the components of the script that creates Kubernetes resourc
 
 1. **Save the Script**: Store the script in a file, for instance, `create-pv-pvc-statefulset.sh`.
 2. **Make Executable**:
-   ```bash
+
+   ```
+   
    chmod +x create-pv-pvc-statefulset.sh
 ./create-pv-pvc-statefulset.sh
+
 ```
 ---
 
