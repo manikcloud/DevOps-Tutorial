@@ -3,8 +3,8 @@ pipeline {
 
     environment {
         AWS_REGION = 'us-east-1'
-        // AWS_ACCESS_KEY_ID = ""
-        // AWS_SECRET_ACCESS_KEY = ""
+        AWS_ACCESS_KEY_ID = "AKIA37SIIUEVGIJGBPNG"
+        AWS_SECRET_ACCESS_KEY = "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"
     }
 
     stages {
