@@ -121,11 +121,11 @@ This guide explains the components of the script that creates Kubernetes resourc
 2. **Make Executable**:
 
    ```
-   
-   chmod +x create-pv-pvc-statefulset.sh
-./create-pv-pvc-statefulset.sh
 
-```
+   chmod +x create-pv-pvc-statefulset.sh
+   create-pv-pvc-statefulset.sh
+
+    ```
 ---
 
 # Using Vault in Jenkins 
