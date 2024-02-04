@@ -125,7 +125,7 @@ This guide explains the components of the script that creates Kubernetes resourc
 ```
 ---
 
-# Using Vault in Jenkins
+# Using Vault in Jenkins 
 
 HashiCorp Vault is a tool for secrets management, allowing you to securely store and access sensitive data like passwords, tokens, and keys. Integrating Vault with Jenkins can significantly enhance the security of your CI/CD pipelines by providing a secure way to handle credentials and other sensitive information.
 
