@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+
+kind: Deployment 
+
+metadata:
+  name: web-calc
+  labels:
+    application: web-app-calc
+
+spec:
+  selector:
+    matchLabels:
+      application: web-app-calc
+  replicas: 3  
+  template:
+    metadata:
+      name: calculator
+      labels:
+        application: web-app-calc 
+        env: dev 
+        product: calculator-py
+      
+    spec:
+      containers:
+        - name: calc-image
+          image: varunmanik/python-calc-app  

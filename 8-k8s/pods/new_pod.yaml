@@ -1,0 +1,14 @@
+apiVersion: v1
+
+kind: Pod
+metadata:
+  name: varunapp
+  labels:
+    name: webapp
+spec:
+  containers:
+  - name: httpdBlueApp
+    image: varunmanik/httpd:blue
+
+    ports:
+      - containerPort: 80

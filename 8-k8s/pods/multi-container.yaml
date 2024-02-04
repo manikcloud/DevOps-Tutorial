@@ -7,7 +7,7 @@ metadata:
   labels:
     env: dev
     tier: frontend  
-    
+    costcenter: devops
 
 spec:
   containers:
